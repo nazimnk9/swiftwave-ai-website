@@ -27,9 +27,13 @@ export default function HeroSection() {
     ],
   };
 
+  // Cast Slider to any to avoid "cannot be used as a JSX component" error due to type definition mismatch
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const SliderComponent = Slider as any;
+
   return (
     <div className="relative my-4 w-full lg:my-16">
-      <Slider {...settings}>
+      <SliderComponent {...settings}>
         {slides.map((slide, index) => (
           <div key={index}>
             <HeroSectionCard
@@ -45,7 +49,7 @@ export default function HeroSection() {
             />
           </div>
         ))}
-      </Slider>
+      </SliderComponent>
     </div>
   );
 }
