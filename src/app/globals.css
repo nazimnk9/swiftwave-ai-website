@@ -1,0 +1,219 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.clip-ribbon {
+  clip-path: polygon(100% 75%, 50% 100%, 0% 75%, 0% 0%, 50% 25%, 100% 0%);
+}
+/* Glow ring animation */
+.glow-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: clamp(60px, 25vw, 120px);
+  height: clamp(60px, 25vw, 120px);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
+    circle,
+    rgba(0, 191, 255, 0.55) 28%,
+    transparent 78%
+  );
+  box-shadow:
+    0 0 clamp(12px, 4vw, 28px) #00bfff,
+    0 0 clamp(18px, 5vw, 40px) #00bfff inset;
+  animation: pulse-ring 3s infinite ease-in-out;
+  z-index: -1;
+}
+
+@keyframes pulse-ring {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.85;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.08);
+    opacity: 1;
+  }
+}
+
+/* Floating card animation */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(clamp(-2px, -0.6vw, -1.5px));
+  }
+  50% {
+    transform: translateY(clamp(1.5px, 0.6vw, 2px));
+  }
+}
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Fade-in modal animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease forwards;
+}
+
+/* Pulsing orbit lines */
+svg line {
+  stroke: #00bfff;
+  stroke-width: clamp(0.8px, 0.25vw, 1.2px);
+  stroke-dasharray: clamp(1.5px, 0.6vw, 3px);
+  animation: pulse-line 2.2s infinite ease-in-out;
+  filter: drop-shadow(0 0 clamp(2px, 0.8vw, 4px) #00bfff);
+}
+@keyframes pulse-line {
+  0%,
+  100% {
+    stroke-opacity: 0.4;
+    stroke-width: clamp(0.8px, 0.25vw, 1.2px);
+  }
+  50% {
+    stroke-opacity: 1;
+    stroke-width: clamp(1.2px, 0.35vw, 1.8px);
+  }
+}
+
+/* brands */
+:root {
+  --tile-bg: #D3B265/10;
+  --tile-border: rgba(211, 178, 101, 0.08);
+  --fg-dim: rgba(211, 178, 101, 0.75);
+  --fg: rgb(211, 178, 101);
+}
+
+.eyebrow {
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgb(103, 232, 249);
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.semi-title {
+  color: rgb(211, 178, 101);
+}
+
+.brand-wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.04),
+    rgba(255, 255, 255, 0.02)
+  );
+  border: 1px solid var(--tile-border);
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.brand-marquee {
+  display: flex;
+  gap: 1.25rem;
+  padding: 0.25rem;
+  width: max-content;
+  animation: scroll 26s linear infinite;
+}
+
+@media (min-width: 768px) {
+  .brand-marquee {
+    padding: 0.5rem;
+  }
+}
+
+.brand-wrap:hover .brand-marquee {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-marquee {
+    animation: none;
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.brand-tile {
+  flex: 0 0 auto;
+  width: 180px;
+  height: 96px;
+  display: grid;
+  place-items: center;
+  gap: 0.35rem;
+  background: var(--tile-bg);
+  border: 1px solid var(--tile-border);
+  border-radius: 0.9rem;
+  padding: 0.75rem 0.5rem;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+.brand-tile:hover {
+  transform: translateY(-2px);
+  border-color: var(--tile-bg) / 7;
+  box-shadow: 0 10px 30px var(--tile-bg);
+  background: var(--tile-bg);
+}
+
+.brand-logo {
+  max-width: 120px;
+  max-height: 44px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.brand-name {
+  font-size: 0.8rem;
+  color: var(--fg-dim);
+  white-space: nowrap;
+}
+
+.brand-wrap::before,
+.brand-wrap::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.brand-wrap::before {
+  left: 0;
+  background: linear-gradient(90deg, #1b1c1d 0%, transparent 100%);
+}
+
+.brand-wrap::after {
+  right: 0;
+  background: linear-gradient(270deg, #1b1c1d 0%, transparent 100%);
+}
+
+.primary-button {
+  background: linear-gradient(to right, #D2AC47 5%, #F7EF8A 45%, #AE8625 85%);
+}
