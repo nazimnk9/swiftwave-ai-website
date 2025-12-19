@@ -100,7 +100,7 @@ const HeroSectionCard = ({
             <source src={videoSrc} type="video/mp4" />
           </video>
           {/* Overlay to make text more readable */}
-          <div className="absolute left-0 top-0 h-full w-full bg-black/50"></div>
+          <div className="absolute left-0 top-0 h-full w-full bg-black/60"></div>
         </>
       )}
       <div className="relative z-10 w-1/2">
