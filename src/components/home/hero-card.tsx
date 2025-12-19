@@ -86,7 +86,7 @@ const HeroSectionCard = ({
   videoSrc,
 }: HeroSectionCardProps) => {
   return (
-    <section className="relative overflow-hidden flex flex-row items-center justify-between gap-4 bg-background px-2 py-6 text-text sm:gap-8 sm:px-8 lg:px-16 lg:py-12">
+    <section className="relative overflow-hidden flex flex-row items-center justify-between gap-10 bg-background pl-2 pr-0 py-6 text-text sm:gap-16 sm:pl-8 sm:pr-0 lg:gap-24 lg:pl-16 lg:pr-0 lg:py-12">
       {videoSrc && (
         <>
           <video
@@ -103,7 +103,7 @@ const HeroSectionCard = ({
           <div className="absolute left-0 top-0 h-full w-full bg-black/60"></div>
         </>
       )}
-      <div className="relative z-10 w-1/2">
+      <div className="relative z-10 w-[45%]">
         <h1 className="mb-2 bg-gradient-to-br from-[#9e7f29] via-[#ffe185] to-[#9e7f29] bg-clip-text text-base font-bold text-transparent sm:mb-4 sm:text-xl md:text-3xl lg:text-5xl">
           <span className="block">
             {title.split("\n")[0]}
@@ -138,7 +138,7 @@ const HeroSectionCard = ({
       </div>
 
       {/* Only change: added mt-6 for mobile */}
-      <div className="relative z-10 w-1/2 mt-[4.3rem] sm:mt-0">
+      <div className="relative z-10 w-[45%] mt-[4.3rem] sm:mt-0">
         <div className="relative aspect-[4/3] w-full overflow-hidden rounded-md">
           {mobileImageSrc && desktopImageSrc ? (
             <>
