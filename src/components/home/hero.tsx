@@ -76,8 +76,8 @@ const slides = [
     imageSrc: "/new_pics/",  // hero/caro_1.png
     // mobileImageSrc: "/new_pics/AI_Phone_Call_for_mobile_version.jpeg",
     // desktopImageSrc: "/new_pics/AI_Phone_Call_for_desktop_version.jpeg",
-    mobileImageSrc: "/new_pics/AI_Phone_Call.png",
-    desktopImageSrc: "/new_pics/AI_Phone_Call.png",
+    mobileImageSrc: "/new_pics/ai_call_2.png",
+    desktopImageSrc: "/new_pics/ai_call_2.png",
     imageAlt: "AI Professional",
     videoSrc: "/next_video.mp4",
   },
