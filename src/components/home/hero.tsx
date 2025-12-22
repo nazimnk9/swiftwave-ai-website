@@ -100,8 +100,8 @@ const slides = [
     imageSrc: "/new_pics/4_edit_noor.png",  // /hero/hero2.png
     // mobileImageSrc: "/new_pics/AI_Skill_Search_for_mobile_version.jpeg",
     // desktopImageSrc: "/new_pics/AI_Skill_Search_for_desktop_version.jpeg",
-    mobileImageSrc: "/new_pics/img2.png",
-    desktopImageSrc: "/new_pics/img2.png",
+    mobileImageSrc: "/new_pics/img.png",
+    desktopImageSrc: "/new_pics/img.png",
     imageAlt: "AI Professional",
     videoSrc: "/next_video.mp4",
   },
