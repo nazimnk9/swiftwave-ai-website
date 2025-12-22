@@ -62,8 +62,8 @@ const slides = [
     buttonText1: "Start Free Trial",
     buttonText2: "Check Apps",
     imageSrc: "/new_pics/1_edited_noor_v1.png",  // hero/caro_1.png
-    mobileImageSrc: "/new_pics/ai_sales.png",
-    desktopImageSrc: "/new_pics/ai_sales.png",
+    mobileImageSrc: "/new_pics/image3.png",
+    desktopImageSrc: "/new_pics/image3.png",
     imageAlt: "AI Professional",
     videoSrc: "/next_video.mp4",
   },
@@ -76,8 +76,8 @@ const slides = [
     imageSrc: "/new_pics/",  // hero/caro_1.png
     // mobileImageSrc: "/new_pics/AI_Phone_Call_for_mobile_version.jpeg",
     // desktopImageSrc: "/new_pics/AI_Phone_Call_for_desktop_version.jpeg",
-    mobileImageSrc: "/new_pics/ai_call_2.png",
-    desktopImageSrc: "/new_pics/ai_call_2.png",
+    mobileImageSrc: "/new_pics/image1.png",
+    desktopImageSrc: "/new_pics/image1.png",
     imageAlt: "AI Professional",
     videoSrc: "/next_video.mp4",
   },
@@ -87,7 +87,7 @@ const slides = [
       "24/7 auto-screen → auto CV format → auto docs to CRM → submission-ready ✓",
     buttonText1: "Start Free Trial",
     buttonText2: "Check Apps",
-    imageSrc: "/new_pics/ai-recruiter.PNG",    // /hero.png
+    imageSrc: "/new_pics/image0.png",    // /hero.png
     imageAlt: "AI Professional",
     videoSrc: "/next_video.mp4",
   },
@@ -100,8 +100,8 @@ const slides = [
     imageSrc: "/new_pics/4_edit_noor.png",  // /hero/hero2.png
     // mobileImageSrc: "/new_pics/AI_Skill_Search_for_mobile_version.jpeg",
     // desktopImageSrc: "/new_pics/AI_Skill_Search_for_desktop_version.jpeg",
-    mobileImageSrc: "/new_pics/ai-search.png",
-    desktopImageSrc: "/new_pics/ai-search.png",
+    mobileImageSrc: "/new_pics/image4.png",
+    desktopImageSrc: "/new_pics/image4.png",
     imageAlt: "AI Professional",
     videoSrc: "/next_video.mp4",
   },
@@ -111,7 +111,7 @@ const slides = [
       "AI 24/7 → 50% less admin → fewer staff needed → lower costs → higher profit ✓",
     buttonText1: "Start Free Trial",
     buttonText2: "Check Apps",
-    imageSrc: "/new_pics/ai-cost.png",
+    imageSrc: "/new_pics/image2.png",
     imageAlt: "AI Professional",
     videoSrc: "/next_video.mp4",
   },
