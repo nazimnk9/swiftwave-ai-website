@@ -403,7 +403,7 @@ const tabData: TabData = {
       },
     ],
   },
-  AIVerifyDocuments: {
+  VerifyDocuments: {
     title: "Verify Documents",
     description:
       "Picture received: ID & Quals. AI automatically scans and extracts details. Verifies document accuracy and format. Files everything perfectly in your CRM. Fast, secure, and 24/7 automated.",

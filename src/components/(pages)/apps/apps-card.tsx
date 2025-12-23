@@ -21,7 +21,7 @@ const AppsCard: FC<AppsCardProps> = ({ id, cardInfo }) => {
     "AI-Client-Lead-Generation": "AIClientLeadGeneration",
     "AI-BDM-Sales-Engine": "AIBDMSalesEngine",
     "AI-Candidate-Skill-Search": "AICandidateSkillSearch",
-    "AI-Verify-Documents": "AIVerifyDocuments",
+    "AI-Verify-Documents": "VerifyDocuments",
     "AI-CV-Formatter": "AICVFormatter",
     "AI-GDPR-Compliance": "AIGDPRCompliance",
     "AI-AWR-Compliance": "AIAWRCompliance",
