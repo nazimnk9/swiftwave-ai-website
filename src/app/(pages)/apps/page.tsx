@@ -74,7 +74,7 @@ const appInfo = [
   {
     id: "7",
     uid: "AI-Verify-Documents",
-    title: "AI Verify Documents",
+    title: "Verify Documents",
     description:
       "Picture received: ID & Quals. AI automatically scans and extracts details. Verifies document accuracy and format. Files everything perfectly in your CRM. Fast, secure, and 24/7 automated.",
     image: "/modules/image00007.png",

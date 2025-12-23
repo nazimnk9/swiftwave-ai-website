@@ -808,7 +808,7 @@ cta: {
   {
     uid: "AI-Verify-Documents",
     hero: {
-      badge: "App • AI Verify Documents",
+      badge: "App • Verify Documents",
       title: "Smart, Automated Document Capture.",
       //highlight: "Automatically",
       description:
@@ -826,7 +826,7 @@ cta: {
     },
     steps: {
       headingBadge: "Steps",
-      headingTitle: "Use AI Verify Documents with Business CRM in Swiftwave.AI CRM",
+      headingTitle: "Use Verify Documents with Business CRM in Swiftwave.AI CRM",
       items: [
         {
           number: "1",

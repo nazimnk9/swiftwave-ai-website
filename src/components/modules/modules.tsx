@@ -109,11 +109,11 @@ const modules = [
   {
     uid: "AI-Verify-Documents",
     tabid: "AIVerifyDocuments",
-    title: "AI Verify Documents",
+    title: "Verify Documents",
     description:
       "Picture received: ID & Quals. AI automatically scans and extracts details. Verifies document accuracy and format. Files everything perfectly in your CRM. Fast, secure, and 24/7 automated.",
     imageSrc: "/modules/image00007.png",
-    imageAlt: "AI Verify Documents Illustration",
+    imageAlt: "Verify Documents Illustration",
     buttonText1: "See More",
     buttonText2: "Pricing",
   },
@@ -161,7 +161,7 @@ const modules = [
     title: "Module 12",
     commingSoon: true,
     imageSrc: "/modules/image00012.png",
-    imageAlt: "AI Verify Documents Illustration",
+    imageAlt: "Verify Documents Illustration",
     buttonText1: "Pre-Order",
   },
 ];
