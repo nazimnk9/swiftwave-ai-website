@@ -29,7 +29,7 @@ const appInfo = [
     title: "AI Phone Call",
     description:
       "When applicants don’t respond to WhatsApp, our AI automatically calls them, confirms their qualifications, and instantly sends a text to register if they’re eligible.",
-    image: "/apps/ai-telephone-call.png",
+    image: "/modules/image00001.png",
   },
   {
     id: "2",
@@ -37,7 +37,7 @@ const appInfo = [
     title: "AI WhatsApp Recruiter",
     description:
       "Recruits 24/7 while you sleep. Our automated workflow streamlines the journey from candidate selection to onboarding — saving recruiters up to 50% of their time.",
-    image: "/apps/ai-whatsapp-chatbot.png",
+    image: "/modules/image00002.png",
   },
   {
     id: "3",
@@ -45,7 +45,7 @@ const appInfo = [
     title: "AI SMS Recruiter",
     description:
       "Instantly messages new applicants - Checks skills and right-to-work details - Sends a secure upload link if qualified - Documents flow straight into your CRM - Works 24/7 while you sleep.",
-    image: "/apps/ai_sms.png",
+    image: "/modules/image00003.png",
   },
   {
     id: "4",
@@ -53,7 +53,7 @@ const appInfo = [
     title: "AI Client Lead Generation",
     description:
       "Intelligently identifies new opportunities. Rekindles old connections within your CRM. Sends personalised content and messages. Automatically schedules meeting invites. Warms leads 24/7 while you sleep.",
-    image: "/apps/ai-client-lead-generation.png",
+    image: "/modules/image00004.png",
   },
   {
     id: "5",
@@ -61,7 +61,7 @@ const appInfo = [
     title: "AI BDM Sales Engine",
     description:
       "Intelligently identifies new opportunities. Rekindles old connections within your CRM. Sends personalised content and messages. Automatically schedules meeting invites. Warms leads 24/7 while you sleep.",
-    image: "/apps/AI_BDM_Sales_Engine.png",
+    image: "/modules/image00005.png",
   },
   {
     id: "6",
@@ -69,7 +69,7 @@ const appInfo = [
     title: "AI Candidate Skill Search",
     description:
       "AI scans your CRM to rediscover skilled candidates you already own. Reduce ad spend and time-to-hire with automated skill matching to job vacancy.",
-    image: "/apps/ai-ocr-skill-search.png",
+    image: "/modules/image00006.png",
   },
   {
     id: "7",
@@ -77,7 +77,7 @@ const appInfo = [
     title: "AI Verify Documents",
     description:
       "Picture received: ID & Quals. AI automatically scans and extracts details. Verifies document accuracy and format. Files everything perfectly in your CRM. Fast, secure, and 24/7 automated.",
-    image: "/apps/AI_WhatsApp_Picture_to_CRM.png",
+    image: "/modules/image00007.png",
   },
   {
     id: "8",
@@ -85,7 +85,7 @@ const appInfo = [
     title: "AI CV Formatter",
     description:
       "Automatically removes contact details. Enhances wording for professionalism. Adds your company logo and layout. Creates a consistent, branded format. Submit polished CVs fast.",
-    image: "/apps/ai-cv-formatting.png",
+    image: "/modules/image00008.png",
   },
   {
     id: "9",
@@ -93,7 +93,7 @@ const appInfo = [
     title: "AI GDPR Compliance",
     description:
       "Achieve 100% GDPR compliance effortlessly. AI automatically contacts candidates. Updates and cleans your CRM records. Ensures full data protection and accuracy. Works 24/7 to keep you compliant.",
-    image: "/apps/ai-gdpr.png",
+    image: "/modules/image00009.png",
   },
   {
     id: "10",
@@ -101,7 +101,7 @@ const appInfo = [
     title: "AI AWR Compliance (UK)",
     description:
       "Maintain complete Agency Workers Regulations compliance effortlessly. Our intelligent system proactively communicates with companies, ensuring your business.",
-    image: "/apps/ai-awr.png",
+    image: "/modules/image00010.png",
   },
 ];
 

@@ -72,7 +72,7 @@ const AppsCard: FC<AppsCardProps> = ({ id, cardInfo }) => {
                 alt={cardInfo.title}
                 width={450}
                 height={400}
-                className="h-full w-full rounded-lg object-cover shadow-lg transition-transform hover:scale-105"
+                className="h-full w-full rounded-lg object-contain shadow-lg transition-transform hover:scale-105"
                 style={{
                   width: "100%",
                   height: "100%",
@@ -122,7 +122,7 @@ const AppsCard: FC<AppsCardProps> = ({ id, cardInfo }) => {
                 alt={cardInfo.title}
                 width={450}
                 height={400}
-                className="h-full w-full rounded-lg object-cover shadow-lg transition-transform hover:scale-105"
+                className="h-full w-full rounded-lg object-contain shadow-lg transition-transform hover:scale-105"
                 style={{
                   width: "100%",
                   height: "100%",

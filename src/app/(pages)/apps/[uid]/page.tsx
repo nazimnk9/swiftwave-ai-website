@@ -88,7 +88,7 @@ export default function AppDetailsPage() {
               src={data.hero.carouselImages[0].src}
               alt={data.hero.carouselImages[0].alt}
               fill
-              className="object-cover object-center"
+              className="object-contain object-center"
               sizes="(max-width: 768px) 50vw, 50vw"
               priority
             />
