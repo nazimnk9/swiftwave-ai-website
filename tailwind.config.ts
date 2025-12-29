@@ -14,6 +14,7 @@ const config: Config = {
         primary: "#D3B265",
         text: "#E5EBDC",
         accent: "#957D04",
+        acc: "#4e430bff",
         accentForeground: "#5995F1",
       },
     },

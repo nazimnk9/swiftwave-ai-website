@@ -257,7 +257,7 @@ const ChatbotDialog: React.FC<ChatbotDialogProps> = ({ isOpen, onClose }) => {
             disabled={isLoading}
             className="flex-1 text-black focus:text-black focus-visible:ring-black focus:border-black"
           />
-          <Button type="submit" disabled={isLoading || !inputValue.trim()} className="px-4">
+          <Button variant="secon" type="submit" disabled={isLoading || !inputValue.trim()} className="px-4">
             Send
           </Button>
         </form>
