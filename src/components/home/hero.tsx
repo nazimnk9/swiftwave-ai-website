@@ -65,7 +65,7 @@ const slides = [
     mobileImageSrc: "/new_pics/img4.png",
     desktopImageSrc: "/new_pics/img4.png",
     imageAlt: "AI Professional",
-    videoSrc: "/next_video.mp4",
+    videoSrc: "/Carousel_video.mp4",
   },
   {
     title: "AI Phone Call",
@@ -79,7 +79,7 @@ const slides = [
     mobileImageSrc: "/new_pics/img0.png",
     desktopImageSrc: "/new_pics/img0.png",
     imageAlt: "AI Professional",
-    videoSrc: "/next_video.mp4",
+    videoSrc: "/Carousel_video.mp4",
   },
   {
     title: "AI Recruiter",
@@ -89,7 +89,7 @@ const slides = [
     buttonText2: "Check Apps",
     imageSrc: "/new_pics/img1.png",    // /hero.png
     imageAlt: "AI Professional",
-    videoSrc: "/next_video.mp4",
+    videoSrc: "/Carousel_video.mp4",
   },
   {
     title: "AI Skill Search",
@@ -103,7 +103,7 @@ const slides = [
     mobileImageSrc: "/new_pics/img.png",
     desktopImageSrc: "/new_pics/img.png",
     imageAlt: "AI Professional",
-    videoSrc: "/next_video.mp4",
+    videoSrc: "/Carousel_video.mp4",
   },
   {
     title: "AI Cost Savings",  // Revolutionising Recruitment
@@ -113,6 +113,6 @@ const slides = [
     buttonText2: "Check Apps",
     imageSrc: "/new_pics/img3.png",
     imageAlt: "AI Professional",
-    videoSrc: "/next_video.mp4",
+    videoSrc: "/Carousel_video.mp4",
   },
 ];

@@ -22,7 +22,7 @@ const AIModulesSection = () => {
         preload="auto"
         className="absolute inset-0 h-full w-full object-cover"
       >
-        <source src="/AI_Video.mov" type="video/mp4" />
+        <source src="/AI_Video.mp4" type="video/mp4" />
       </video>
 
       {/* Overlay */}

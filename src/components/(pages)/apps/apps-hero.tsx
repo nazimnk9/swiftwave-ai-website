@@ -11,7 +11,7 @@ const AppsHero: FC = () => {
         preload="auto"
         className="absolute left-0 top-0 h-full w-full object-cover"
       >
-        <source src="/app.mp4" type="video/mp4" />
+        <source src="/app_1.mp4" type="video/mp4" />
       </video>
 
       {/* Overlay to make text more readable */}

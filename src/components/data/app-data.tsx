@@ -15,7 +15,7 @@ export const appData = [
       ],
       carouselImages: [
         {
-          src: "/modules/image00001.png",
+          src: "/modules/rsz_image00001.png",
           alt: "Phone interview preview",
         },
       ],
@@ -143,7 +143,7 @@ export const appData = [
       ],
       carouselImages: [
         {
-          src: "/modules/image00002.png",
+          src: "/modules/rsz_image00002.png",
           alt: "WhatsApp interview preview",
         },
       ],
@@ -270,7 +270,7 @@ export const appData = [
       ],
       carouselImages: [
         {
-          src: "/modules/image00003.png",
+          src: "/modules/rsz_image00003.png",
           alt: "WhatsApp interview preview",
         },
       ],
@@ -392,7 +392,7 @@ export const appData = [
       ],
       carouselImages: [
         {
-          src: "/modules/image00004.png",
+          src: "/modules/rsz_image00004.png",
           alt: "AI Client Lead Generation",
         },
       ],
@@ -519,7 +519,7 @@ export const appData = [
       ],
       carouselImages: [
         {
-          src: "/modules/image00005.png",
+          src: "/modules/rsz_image00005.png",
           alt: "AI BDM Sales Engine",
         },
       ],
@@ -669,7 +669,7 @@ export const appData = [
       ],
       carouselImages: [
         {
-          src: "/modules/image00006.png",
+          src: "/modules/rsz_image00006.png",
           alt: "WhatsApp interview preview",
         },
       ],
@@ -819,7 +819,7 @@ cta: {
       ],
       carouselImages: [
         {
-          src: "/modules/image00007.png",
+          src: "/modules/rsz_image00007.png",
           alt: "WhatsApp interview preview",
         },
       ],
@@ -945,7 +945,7 @@ cta: {
         { label: "Check Pricing", href: "/pricing", variant: "outline" },
       ],
       carouselImages: [
-        { src: "/modules/image00008.png", alt: "CV formatting preview" },
+        { src: "/modules/rsz_image00008.png", alt: "CV formatting preview" },
       ],
     },
     steps: {
@@ -1068,7 +1068,7 @@ cta: {
         { label: "Check Pricing", href: "/pricing", variant: "outline" },
       ],
       carouselImages: [
-        { src: "/modules/image00009.png", alt: "Consent dashboard preview" },
+        { src: "/modules/rsz_image00009.png", alt: "Consent dashboard preview" },
       ],
     },
     steps: {
@@ -1190,7 +1190,7 @@ cta: {
         { label: "Check Pricing", href: "/pricing", variant: "outline" },
       ],
       carouselImages: [
-        { src: "/modules/image00010.png", alt: "AWR tracking dashboard" },
+        { src: "/modules/rsz_image00010.png", alt: "AWR tracking dashboard" },
       ],
     },
     steps: {
