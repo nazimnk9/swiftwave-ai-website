@@ -151,6 +151,13 @@ const modules = [
     buttonText2: "Pricing",
   },
   {
+    title: "AI Client Opportunity",
+    InDevelopment: true,
+    imageSrc: "/modules/AI_Client_Opportunity.PNG",
+    imageAlt: "AI Client Opportunity Illustration",
+    buttonText1: "Pre-Order",
+  },
+  {
     title: "Module 11",
     InDevelopment: true,
     imageSrc: "/modules/rsz_image00011.png",
