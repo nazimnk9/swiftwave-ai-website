@@ -96,6 +96,13 @@ const modules = [
     buttonText2: "Pricing",
   },
   {
+    title: "AI Client Opportunity",
+    InDevelopment: true,
+    imageSrc: "/modules/AI_Client_Opportunity.PNG",
+    imageAlt: "AI Client Opportunity Illustration",
+    buttonText1: "Pre-Order",
+  },
+  {
     uid: "AI-Candidate-Skill-Search",
     tabid: "AICandidateSkillSearch",
     title: "AI Candidate Skill Search",
@@ -149,13 +156,6 @@ const modules = [
     imageAlt: "AI AWR Illustration",
     buttonText1: "See More",
     buttonText2: "Pricing",
-  },
-  {
-    title: "AI Client Opportunity",
-    InDevelopment: true,
-    imageSrc: "/modules/AI_Client_Opportunity.PNG",
-    imageAlt: "AI Client Opportunity Illustration",
-    buttonText1: "Pre-Order",
   },
   {
     title: "Module 11",
