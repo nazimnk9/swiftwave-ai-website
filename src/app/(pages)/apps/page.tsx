@@ -50,7 +50,7 @@ const appInfo = [
   {
     id: "4",
     uid: "AI-Client-Lead-Generation",
-    title: "AI Client Lead Generation",
+    title: "AI CV Lead Generator",
     description:
       "Intelligently identifies new opportunities. Rekindles old connections within your CRM. Sends personalised content and messages. Automatically schedules meeting invites. Warms leads 24/7 while you sleep.",
     image: "/modules/rsz_image00004.png",

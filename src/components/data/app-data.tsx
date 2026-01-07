@@ -381,7 +381,7 @@ export const appData = [
   {
     uid: "AI-Client-Lead-Generation",
     hero: {
-      badge: "App • AI Client Lead Generation",
+      badge: "App • AI CV Lead Generator",
       title: "Automated Client Engagement — 24/7",
       //highlight: "Automatically",
       description:
@@ -393,13 +393,13 @@ export const appData = [
       carouselImages: [
         {
           src: "/modules/rsz_image00004.png",
-          alt: "AI Client Lead Generation",
+          alt: "AI CV Lead Generator",
         },
       ],
     },
     steps: {
       headingBadge: "Steps",
-      headingTitle: "Use AI Client Lead Generation with Business CRM in Swiftwave.AI",
+      headingTitle: "Use AI CV Lead Generator with Business CRM in Swiftwave.AI",
       items: [
         {
           number: "1",
@@ -452,51 +452,51 @@ export const appData = [
       },
     ],
     whatYouGet: {
-    title: "What you get with AI Client Lead Generation",
-    subtitle: "Included",
-    items: [
-      {
-        title: "Candidate CV/Resume scanning",
-        description:
-          "Automatically reviews candidate records and CVs in your Business CRM to identify potential client companies and hiring signals.",
-      },
-      {
-        title: "Company discovery & enrichment",
-        description:
-          "Extracts new company names from CVs, then enriches profiles with industry, location, and website details.",
-      },
-      {
-        title: "Contact finding from public sources",
-        description:
-          "Finds relevant decision-maker contacts using CV clues and publicly available online information (no paywalled or private scraping).",
-      },
-      {
-        title: "Deduplication & smart matching",
-        description:
-          "Prevents duplicates by matching against existing clients/leads and merging records with confidence scoring.",
-      },
-      {
-        title: "Compliance-first data handling",
-        description:
-          "Respects GDPR/privacy principles with data minimization, audit logs, and configurable rules to exclude restricted data.",
-      },
-      {
-        title: "Lead scoring & prioritization",
-        description:
-          "Ranks discovered companies and contacts by relevance, hiring intent, and fit—so your team focuses on the best leads first.",
-      },
-      {
-        title: "CRM/ATS sync & exports",
-        description:
-          "Pushes leads to your Business CRM, with CSV/JSON exports and a full activity trail for reporting.",
-      },
-    ],
-  },
+      title: "What you get with AI CV Lead Generator",
+      subtitle: "Included",
+      items: [
+        {
+          title: "Candidate CV/Resume scanning",
+          description:
+            "Automatically reviews candidate records and CVs in your Business CRM to identify potential client companies and hiring signals.",
+        },
+        {
+          title: "Company discovery & enrichment",
+          description:
+            "Extracts new company names from CVs, then enriches profiles with industry, location, and website details.",
+        },
+        {
+          title: "Contact finding from public sources",
+          description:
+            "Finds relevant decision-maker contacts using CV clues and publicly available online information (no paywalled or private scraping).",
+        },
+        {
+          title: "Deduplication & smart matching",
+          description:
+            "Prevents duplicates by matching against existing clients/leads and merging records with confidence scoring.",
+        },
+        {
+          title: "Compliance-first data handling",
+          description:
+            "Respects GDPR/privacy principles with data minimization, audit logs, and configurable rules to exclude restricted data.",
+        },
+        {
+          title: "Lead scoring & prioritization",
+          description:
+            "Ranks discovered companies and contacts by relevance, hiring intent, and fit—so your team focuses on the best leads first.",
+        },
+        {
+          title: "CRM/ATS sync & exports",
+          description:
+            "Pushes leads to your Business CRM, with CSV/JSON exports and a full activity trail for reporting.",
+        },
+      ],
+    },
 
     cta: {
       title: "Just configure the App and sleep well for next morning to see what you always wanted",
       description:
-        "AI Client Lead Generation: find companies, enrich leads, and reach the right contacts—on autopilot.",
+        "AI CV Lead Generator: find companies, enrich leads, and reach the right contacts—on autopilot.",
       buttons: [
         { label: "Get Started", href: "#", variant: "primary" },
         { label: "View Pricing", href: "/pricing", variant: "outline" },
@@ -525,134 +525,134 @@ export const appData = [
       ],
     },
     steps: {
-    headingBadge: "Steps",
-    headingTitle: "Use AI BDM Sales Engine with Business CRM in Swiftwave.AI",
-    items: [
-      {
-        number: "1",
-        title: "Connect WhatsApp",
-        description:
-          "Link your WhatsApp Business API (Meta or Twilio). We’ll verify your number, templates, and opt-in rules for compliant client outreach.",
-      },
-      {
-        number: "2",
-        title: "Connect Business CRM",
-        description:
-          "Authorize your Business CRM (e.g., JobAdder). We’ll sync your company list, client contacts, and existing jobs to avoid duplicates.",
-      },
-      {
-        number: "3",
-        title: "Set Outreach Cadence & Script",
-        description:
-          "Choose the weekly follow-up day/time and customize the WhatsApp bot flow—job-requirement prompts, role details, budgets, locations, and urgency.",
-      },
-      {
-        number: "4",
-        title: "Go Live & Auto-Create Jobs",
-        description:
-          "AI BDM Sales Engine starts WhatsApp conversations, captures new hiring needs, confirms full job specs, and automatically creates new jobs in your CRM with logs.",
-      },
-    ],
-  },
+      headingBadge: "Steps",
+      headingTitle: "Use AI BDM Sales Engine with Business CRM in Swiftwave.AI",
+      items: [
+        {
+          number: "1",
+          title: "Connect WhatsApp",
+          description:
+            "Link your WhatsApp Business API (Meta or Twilio). We’ll verify your number, templates, and opt-in rules for compliant client outreach.",
+        },
+        {
+          number: "2",
+          title: "Connect Business CRM",
+          description:
+            "Authorize your Business CRM (e.g., JobAdder). We’ll sync your company list, client contacts, and existing jobs to avoid duplicates.",
+        },
+        {
+          number: "3",
+          title: "Set Outreach Cadence & Script",
+          description:
+            "Choose the weekly follow-up day/time and customize the WhatsApp bot flow—job-requirement prompts, role details, budgets, locations, and urgency.",
+        },
+        {
+          number: "4",
+          title: "Go Live & Auto-Create Jobs",
+          description:
+            "AI BDM Sales Engine starts WhatsApp conversations, captures new hiring needs, confirms full job specs, and automatically creates new jobs in your CRM with logs.",
+        },
+      ],
+    },
 
     features: [
-    {
-      icon: <MenuIcon />,
-      title: "Weekly WhatsApp outreach on autopilot",
-      description:
-        "Automatically pings your client contacts on a chosen day each week to ask if they have new hiring needs—no manual follow-ups needed.",
-      image: "/hero.png",
-    },
-    {
-      icon: <MenuIcon />,
-      title: "AI-led job requirement conversations",
-      description:
-        "A human-like WhatsApp chatbot gathers role needs, headcount, location, salary range, shift patterns, start date, and must-have skills through smart follow-ups.",
-      image: "/hero.png",
-    },
-    {
-      icon: <MenuIcon />,
-      title: "Perfect job brief builder",
-      description:
-        "Transforms chat answers into a structured, complete job description—validates missing fields, clarifies ambiguities, and confirms details with the client.",
-      image: "/hero.png",
-    },
-    {
-      icon: <MenuIcon />,
-      title: "Business CRM company & contact sync",
-      description:
-        "Reads your existing client list and WhatsApp numbers from Business CRMs like JobAdder, keeps records updated, and prevents duplicate jobs.",
-      image: "/hero.png",
-    },
-    {
-      icon: <MenuIcon />,
-      title: "Auto-create jobs in CRM",
-      description:
-        "Once a requirement is confirmed, the engine creates a new job in your Business CRM with full specs, contact linkage, and conversation logs.",
-      image: "/hero.png",
-    },
-    {
-      icon: <ShieldIcon />,
-      title: "Compliance & opt-in safety",
-      description:
-        "Includes consent-aware messaging, audit trails, and configurable rules to respect WhatsApp policies and privacy requirements.",
-      image: "/hero.png",
-    },
-  ],
-
-    whatYouGet: {
-    title: "What you get with AI BDM Sales Engine",
-    subtitle: "Included",
-    items: [
       {
-        title: "WhatsApp template & opt-in support",
+        icon: <MenuIcon />,
+        title: "Weekly WhatsApp outreach on autopilot",
         description:
-          "Ready-to-approve outreach templates for Meta/Twilio, opt-in guidance, and safe fallbacks when sessions expire.",
+          "Automatically pings your client contacts on a chosen day each week to ask if they have new hiring needs—no manual follow-ups needed.",
+        image: "/hero.png",
       },
       {
-        title: "Weekly client follow-up automation",
+        icon: <MenuIcon />,
+        title: "AI-led job requirement conversations",
         description:
-          "Auto-messages your CRM-listed contacts every week on your chosen day/time to ask for new job requirements.",
+          "A human-like WhatsApp chatbot gathers role needs, headcount, location, salary range, shift patterns, start date, and must-have skills through smart follow-ups.",
+        image: "/hero.png",
       },
       {
-        title: "AI requirement discovery flow",
+        icon: <MenuIcon />,
+        title: "Perfect job brief builder",
         description:
-          "Smart WhatsApp conversations that capture role details, headcount, skills, salary/budget, location, shifts, start dates, and urgency.",
+          "Transforms chat answers into a structured, complete job description—validates missing fields, clarifies ambiguities, and confirms details with the client.",
+        image: "/hero.png",
       },
       {
-        title: "Job brief verification & completion",
+        icon: <MenuIcon />,
+        title: "Business CRM company & contact sync",
         description:
-          "Validates missing fields, clarifies vague answers, and confirms a final structured job brief with the client.",
+          "Reads your existing client list and WhatsApp numbers from Business CRMs like JobAdder, keeps records updated, and prevents duplicate jobs.",
+        image: "/hero.png",
       },
       {
-        title: "Business CRM sync",
-        description:
-          "Pulls companies and contacts from CRMs like JobAdder, links conversations back to accounts, and avoids duplicate job creation.",
-      },
-      {
+        icon: <MenuIcon />,
         title: "Auto-create jobs in CRM",
         description:
-          "Creates a new job in your Business CRM the moment a requirement is confirmed—complete with notes and chat transcript.",
+          "Once a requirement is confirmed, the engine creates a new job in your Business CRM with full specs, contact linkage, and conversation logs.",
+        image: "/hero.png",
       },
       {
-        title: "Analytics & activity logs",
+        icon: <ShieldIcon />,
+        title: "Compliance & opt-in safety",
         description:
-          "Tracks outreach rate, response rate, jobs generated per client, and full audit trails for performance reporting.",
+          "Includes consent-aware messaging, audit trails, and configurable rules to respect WhatsApp policies and privacy requirements.",
+        image: "/hero.png",
       },
     ],
-  },
+
+    whatYouGet: {
+      title: "What you get with AI BDM Sales Engine",
+      subtitle: "Included",
+      items: [
+        {
+          title: "WhatsApp template & opt-in support",
+          description:
+            "Ready-to-approve outreach templates for Meta/Twilio, opt-in guidance, and safe fallbacks when sessions expire.",
+        },
+        {
+          title: "Weekly client follow-up automation",
+          description:
+            "Auto-messages your CRM-listed contacts every week on your chosen day/time to ask for new job requirements.",
+        },
+        {
+          title: "AI requirement discovery flow",
+          description:
+            "Smart WhatsApp conversations that capture role details, headcount, skills, salary/budget, location, shifts, start dates, and urgency.",
+        },
+        {
+          title: "Job brief verification & completion",
+          description:
+            "Validates missing fields, clarifies vague answers, and confirms a final structured job brief with the client.",
+        },
+        {
+          title: "Business CRM sync",
+          description:
+            "Pulls companies and contacts from CRMs like JobAdder, links conversations back to accounts, and avoids duplicate job creation.",
+        },
+        {
+          title: "Auto-create jobs in CRM",
+          description:
+            "Creates a new job in your Business CRM the moment a requirement is confirmed—complete with notes and chat transcript.",
+        },
+        {
+          title: "Analytics & activity logs",
+          description:
+            "Tracks outreach rate, response rate, jobs generated per client, and full audit trails for performance reporting.",
+        },
+      ],
+    },
 
     cta: {
-    title: "Generate new client jobs every week—automatically",
-    description:
-      "Switch on AI BDM Sales Engine to follow up with clients on WhatsApp, capture fresh job requirements, and create new CRM jobs without manual chasing.",
-    buttons: [
-      { label: "Get Started", href: "#", variant: "primary" },
-      { label: "View Pricing", href: "/pricing", variant: "outline" },
-    ],
-    footerText: "Questions?",
-    footerLink: { label: "Contact us", href: "/contact-us" },
-  },
+      title: "Generate new client jobs every week—automatically",
+      description:
+        "Switch on AI BDM Sales Engine to follow up with clients on WhatsApp, capture fresh job requirements, and create new CRM jobs without manual chasing.",
+      buttons: [
+        { label: "Get Started", href: "#", variant: "primary" },
+        { label: "View Pricing", href: "/pricing", variant: "outline" },
+      ],
+      footerText: "Questions?",
+      footerLink: { label: "Contact us", href: "/contact-us" },
+    },
 
   },
   {
@@ -675,134 +675,134 @@ export const appData = [
       ],
     },
     steps: {
-  headingBadge: "Steps",
-  headingTitle: "Use AI Candidate Skill Search with Business CRM in Swiftwave.AI CRM",
-  items: [
-    {
-      number: "1",
-      title: "Connect WhatsApp",
-      description:
-        "Link your WhatsApp Business API (Meta or Twilio). We’ll verify your number, templates, and opt-in rules for compliant candidate outreach.",
+      headingBadge: "Steps",
+      headingTitle: "Use AI Candidate Skill Search with Business CRM in Swiftwave.AI CRM",
+      items: [
+        {
+          number: "1",
+          title: "Connect WhatsApp",
+          description:
+            "Link your WhatsApp Business API (Meta or Twilio). We’ll verify your number, templates, and opt-in rules for compliant candidate outreach.",
+        },
+        {
+          number: "2",
+          title: "Connect Business CRM",
+          description:
+            "Authorize your Business CRM (e.g., JobAdder). We’ll sync job ads, candidate profiles, CVs, and application workflows.",
+        },
+        {
+          number: "3",
+          title: "Configure Search Rules",
+          description:
+            "Set your radius (default 20 km), allowed candidate statuses (active, checking, etc.), and skill-matching thresholds.",
+        },
+        {
+          number: "4",
+          title: "Go Live",
+          description:
+            "AI reads job requirements, finds matching candidates, messages them on WhatsApp, and auto-applies interested candidates to the job in your CRM.",
+        },
+      ],
     },
-    {
-      number: "2",
-      title: "Connect Business CRM",
-      description:
-        "Authorize your Business CRM (e.g., JobAdder). We’ll sync job ads, candidate profiles, CVs, and application workflows.",
-    },
-    {
-      number: "3",
-      title: "Configure Search Rules",
-      description:
-        "Set your radius (default 20 km), allowed candidate statuses (active, checking, etc.), and skill-matching thresholds.",
-    },
-    {
-      number: "4",
-      title: "Go Live",
-      description:
-        "AI reads job requirements, finds matching candidates, messages them on WhatsApp, and auto-applies interested candidates to the job in your CRM.",
-    },
-  ],
-},
 
-features: [
-  {
-    icon: <MenuIcon />,
-    title: "Auto-extract job skills & location",
-    description:
-      "Reads job ads from your CRM to identify required skills, keywords, and job location—no manual parsing needed.",
-    image: "/hero.png",
-  },
-  {
-    icon: <MenuIcon />,
-    title: "Radius-based candidate filtering",
-    description:
-      "Shortlists candidates within a configurable distance (e.g., 20 km) from the job location using city + country matching.",
-    image: "/hero.png",
-  },
-  {
-    icon: <MenuIcon />,
-    title: "Status-aware shortlisting",
-    description:
-      "Only includes candidates in your selected CRM statuses such as Active, Checking, Available, or any custom list you define.",
-    image: "/hero.png",
-  },
-  {
-    icon: <MenuIcon />,
-    title: "Dual-path skill matching",
-    description:
-      "First cross-matches required skills against profile skills. If missing, scans the latest CV to generate a skills list, then matches again for maximum coverage.",
-    image: "/hero.png",
-  },
-  {
-    icon: <MenuIcon />,
-    title: "WhatsApp interest confirmation",
-    description:
-      "Automatically sends personalized WhatsApp messages to matched candidates to confirm interest before applying—improving response quality.",
-    image: "/hero.png",
-  },
-  {
-    icon: <CheckCircleIcon />,
-    title: "Auto-application in CRM",
-    description:
-      "When a candidate confirms, the system creates an application under their profile for that job—complete with chat logs and timestamps.",
-    image: "/hero.png",
-  },
-],
+    features: [
+      {
+        icon: <MenuIcon />,
+        title: "Auto-extract job skills & location",
+        description:
+          "Reads job ads from your CRM to identify required skills, keywords, and job location—no manual parsing needed.",
+        image: "/hero.png",
+      },
+      {
+        icon: <MenuIcon />,
+        title: "Radius-based candidate filtering",
+        description:
+          "Shortlists candidates within a configurable distance (e.g., 20 km) from the job location using city + country matching.",
+        image: "/hero.png",
+      },
+      {
+        icon: <MenuIcon />,
+        title: "Status-aware shortlisting",
+        description:
+          "Only includes candidates in your selected CRM statuses such as Active, Checking, Available, or any custom list you define.",
+        image: "/hero.png",
+      },
+      {
+        icon: <MenuIcon />,
+        title: "Dual-path skill matching",
+        description:
+          "First cross-matches required skills against profile skills. If missing, scans the latest CV to generate a skills list, then matches again for maximum coverage.",
+        image: "/hero.png",
+      },
+      {
+        icon: <MenuIcon />,
+        title: "WhatsApp interest confirmation",
+        description:
+          "Automatically sends personalized WhatsApp messages to matched candidates to confirm interest before applying—improving response quality.",
+        image: "/hero.png",
+      },
+      {
+        icon: <CheckCircleIcon />,
+        title: "Auto-application in CRM",
+        description:
+          "When a candidate confirms, the system creates an application under their profile for that job—complete with chat logs and timestamps.",
+        image: "/hero.png",
+      },
+    ],
 
-whatYouGet: {
-  title: "What you get with AI Candidate Skill Search",
-  subtitle: "Included",
-  items: [
-    {
-      title: "Job skill & location intelligence",
-      description:
-        "Instantly detects required skills, role signals, and job location from CRM job ads with structured extraction.",
+    whatYouGet: {
+      title: "What you get with AI Candidate Skill Search",
+      subtitle: "Included",
+      items: [
+        {
+          title: "Job skill & location intelligence",
+          description:
+            "Instantly detects required skills, role signals, and job location from CRM job ads with structured extraction.",
+        },
+        {
+          title: "Geo-range candidate discovery",
+          description:
+            "Finds candidates within your chosen radius of the job location and supports easy adjustment per role or region.",
+        },
+        {
+          title: "Status-based filtering",
+          description:
+            "Applies your approved candidate status list to ensure only relevant, available talent is contacted.",
+        },
+        {
+          title: "CV skill mining",
+          description:
+            "Scans the latest CV when profile skills are missing to infer candidate skill sets automatically.",
+        },
+        {
+          title: "Skill cross-match & ranking",
+          description:
+            "Matches required vs. candidate skills with confidence scoring and a clear explanation of matches and gaps.",
+        },
+        {
+          title: "WhatsApp outreach automation",
+          description:
+            "Engages matched candidates through a compliant WhatsApp chatbot and tracks their responses.",
+        },
+        {
+          title: "One-click CRM applications",
+          description:
+            "Auto-creates applications for interested candidates and syncs everything back to your CRM with a full audit trail.",
+        },
+      ],
     },
-    {
-      title: "Geo-range candidate discovery",
-      description:
-        "Finds candidates within your chosen radius of the job location and supports easy adjustment per role or region.",
-    },
-    {
-      title: "Status-based filtering",
-      description:
-        "Applies your approved candidate status list to ensure only relevant, available talent is contacted.",
-    },
-    {
-      title: "CV skill mining",
-      description:
-        "Scans the latest CV when profile skills are missing to infer candidate skill sets automatically.",
-    },
-    {
-      title: "Skill cross-match & ranking",
-      description:
-        "Matches required vs. candidate skills with confidence scoring and a clear explanation of matches and gaps.",
-    },
-    {
-      title: "WhatsApp outreach automation",
-      description:
-        "Engages matched candidates through a compliant WhatsApp chatbot and tracks their responses.",
-    },
-    {
-      title: "One-click CRM applications",
-      description:
-        "Auto-creates applications for interested candidates and syncs everything back to your CRM with a full audit trail.",
-    },
-  ],
-},
 
-cta: {
-  title: "Find and engage the right candidates in minutes",
-  description:
-    "Switch on AI Candidate Skill Search to auto-read job requirements, locate nearby matching talent, confirm interest on WhatsApp, and place applications directly in your CRM.",
-  buttons: [
-    { label: "Get Started", href: "#", variant: "primary" },
-    { label: "View Pricing", href: "/pricing", variant: "outline" },
-  ],
-  footerText: "Questions?",
-  footerLink: { label: "Contact us", href: "/contact-us" },
-},
+    cta: {
+      title: "Find and engage the right candidates in minutes",
+      description:
+        "Switch on AI Candidate Skill Search to auto-read job requirements, locate nearby matching talent, confirm interest on WhatsApp, and place applications directly in your CRM.",
+      buttons: [
+        { label: "Get Started", href: "#", variant: "primary" },
+        { label: "View Pricing", href: "/pricing", variant: "outline" },
+      ],
+      footerText: "Questions?",
+      footerLink: { label: "Contact us", href: "/contact-us" },
+    },
 
   },
   {

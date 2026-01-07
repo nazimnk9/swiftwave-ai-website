@@ -76,11 +76,11 @@ const modules = [
   {
     uid: "AI-Client-Lead-Generation",
     tabid: "AIClientLeadGeneration",
-    title: "AI Client Lead Generation",
+    title: "AI CV Lead Generator",
     description:
       "Intelligently identifies new opportunities. Rekindles old connections within your CRM. Sends personalised content and messages. Automatically schedules meeting invites. Warms leads 24/7 while you sleep.",
     imageSrc: "/modules/rsz_image00004.png",
-    imageAlt: "AI Client Lead Generation",
+    imageAlt: "AI CV Lead Generator",
     buttonText1: "See More",
     buttonText2: "Pricing",
   },

@@ -57,11 +57,10 @@ export default function PricingPage() {
               <button
                 key={tab}
                 onClick={() => handleTabChange(tab)}
-                className={`w-full rounded-lg px-4 py-2 text-sm font-medium transition-all duration-300 lg:px-2 ${
-                  activeTab === tab
+                className={`w-full rounded-lg px-4 py-2 text-sm font-medium transition-all duration-300 lg:px-2 ${activeTab === tab
                     ? "primary-button text-black shadow-lg"
                     : "bg-primary/20 hover:bg-primary/30"
-                }`}
+                  }`}
               >
                 {tab
                   .replace(/AI|WhatsApp|Whatsapp/g, " $& ")
@@ -262,7 +261,7 @@ const tabData: TabData = {
     ],
   },
   AIClientLeadGeneration: {
-    title: "AI Client Lead Generation",
+    title: "AI CV Lead Generator",
     description:
       "Intelligently identifies new opportunities. Rekindles old connections within your CRM. Sends personalised content and messages. Automatically schedules meeting invites. Warms leads 24/7 while you sleep.",
     plans: [
