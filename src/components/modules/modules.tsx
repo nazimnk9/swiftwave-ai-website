@@ -74,17 +74,6 @@ const modules = [
     buttonText2: "Pricing",
   },
   {
-    uid: "AI-Client-Lead-Generation",
-    tabid: "AIClientLeadGeneration",
-    title: "AI CV Lead Generator",
-    description:
-      "Intelligently identifies new opportunities. Rekindles old connections within your CRM. Sends personalised content and messages. Automatically schedules meeting invites. Warms leads 24/7 while you sleep.",
-    imageSrc: "/modules/rsz_image00004.png",
-    imageAlt: "AI CV Lead Generator",
-    buttonText1: "See More",
-    buttonText2: "Pricing",
-  },
-  {
     uid: "AI-BDM-Sales-Engine",
     tabid: "AIBDMSalesEngine",
     title: "AI BDM Sales Engine",
@@ -101,6 +90,17 @@ const modules = [
     imageSrc: "/modules/AI_Client_Opportunity.PNG",
     imageAlt: "AI Client Opportunity Illustration",
     buttonText1: "Pre-Order",
+  },
+  {
+    uid: "AI-Client-Lead-Generation",
+    tabid: "AIClientLeadGeneration",
+    title: "AI CV Lead Generator",
+    description:
+      "Intelligently identifies new opportunities. Rekindles old connections within your CRM. Sends personalised content and messages. Automatically schedules meeting invites. Warms leads 24/7 while you sleep.",
+    imageSrc: "/modules/rsz_image00004.png",
+    imageAlt: "AI CV Lead Generator",
+    buttonText1: "See More",
+    buttonText2: "Pricing",
   },
   {
     uid: "AI-Candidate-Skill-Search",
@@ -157,13 +157,13 @@ const modules = [
     buttonText1: "See More",
     buttonText2: "Pricing",
   },
-  {
-    title: "Module 11",
-    InDevelopment: true,
-    imageSrc: "/modules/rsz_image00011.png",
-    imageAlt: "AI Candidate Skill Search Illustration",
-    buttonText1: "Pre-Order",
-  },
+  // {
+  //   title: "Module 11",
+  //   InDevelopment: true,
+  //   imageSrc: "/modules/rsz_image00011.png",
+  //   imageAlt: "AI Candidate Skill Search Illustration",
+  //   buttonText1: "Pre-Order",
+  // },
   {
     title: "Module 12",
     commingSoon: true,

@@ -49,19 +49,19 @@ const appInfo = [
   },
   {
     id: "4",
-    uid: "AI-Client-Lead-Generation",
-    title: "AI CV Lead Generator",
-    description:
-      "Intelligently identifies new opportunities. Rekindles old connections within your CRM. Sends personalised content and messages. Automatically schedules meeting invites. Warms leads 24/7 while you sleep.",
-    image: "/modules/rsz_image00004.png",
-  },
-  {
-    id: "5",
     uid: "AI-BDM-Sales-Engine",
     title: "AI BDM Sales Engine",
     description:
       "Intelligently identifies new opportunities. Rekindles old connections within your CRM. Sends personalised content and messages. Automatically schedules meeting invites. Warms leads 24/7 while you sleep.",
     image: "/modules/rsz_image00005.png",
+  },
+  {
+    id: "5",
+    uid: "AI-Client-Lead-Generation",
+    title: "AI CV Lead Generator",
+    description:
+      "Intelligently identifies new opportunities. Rekindles old connections within your CRM. Sends personalised content and messages. Automatically schedules meeting invites. Warms leads 24/7 while you sleep.",
+    image: "/modules/rsz_image00004.png",
   },
   {
     id: "6",
