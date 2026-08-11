@@ -152,7 +152,7 @@ export default function CallPilotRecruitment() {
                   <span className="text-[#3b82f6] font-bold">•</span>
                   <span>Recruit CRM</span>
                   <span className="text-[#3b82f6] font-bold">•</span>
-                  <span className="text-[#3b82f6] font-bold">
+                  <span className="text-white font-bold">
                     Greenhouse <span className="text-[9px] uppercase font-bold tracking-widest text-[#3b82f6]/90 bg-blue-500/10 px-1.5 py-0.5 rounded ml-0 border border-blue-500">In Progress</span>
                   </span>
                   <span className="text-[#3b82f6] font-bold">•</span>
