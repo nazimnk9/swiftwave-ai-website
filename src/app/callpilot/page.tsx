@@ -516,7 +516,7 @@ export default function CallPilotRecruitment() {
         </section>
 
         {/* SECTION 8: PRICING */}
-        <section className="bg-white py-20 lg:py-20 border-b border-gray-100">
+        <section className="bg-white py-10 lg:py-20 border-b border-gray-100">
           <div className="container mx-auto px-6 sm:px-8 max-w-7xl">
             {/* Header Block */}
             <div className="text-center mb-16">
