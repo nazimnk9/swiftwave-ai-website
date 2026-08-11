@@ -1,0 +1,104 @@
+import logo from "@/assets/call_pilot_logo.png";
+
+
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
+  const footerLinks = {
+    product: [
+      { label: "Features", href: "/features" },
+      { label: "Use Cases", href: "/use-cases" },
+      { label: "Pricing", href: "/pricing" },
+      { label: "News & Insights", href: "/news" },
+    ],
+    company: [
+      { label: "About Us", href: "/about-us" },
+      { label: "Contact", href: "/get-started" },
+    ],
+    resources: [
+      { label: "Documentation", href: "#" },
+    ],
+    legal: [
+      { label: "Privacy Policy", href: "/privacy-policy" },
+      { label: "Terms of Service", href: "/terms-conditions" },
+      { label: "Cookie Policy", href: "/cookie-policy" },
+      { label: "Policies & Compliance", href: "/policy-compliance"}
+    ],
+  };
+
+  return (
+    <footer className="bg-white border-t border-gray-100">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
+          {/* Logo & Description */}
+          <div className="col-span-2 md:col-span-1">
+            <a href="/">
+                <img src={logo.src} alt="CallPilot.pro" className="h-12 md:h-20 w-auto mb-4" />
+            </a>
+            
+            <p className="text-sm text-gray-500 mb-4">
+              AI-powered voice technology for modern businesses.
+            </p>
+
+            {/* Socials */}
+            
+          </div>
+
+
+          {/* Product */}
+          <div>
+            <h4 className="font-semibold text-gray-900 mb-4">Product</h4>
+            <ul className="space-y-3">
+              {footerLinks.product.map((link) => (
+                <li key={link.label}>
+                  <a href={link.href} className="text-sm text-gray-500 hover:text-gray-900 transition-colors">
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Legal */}
+          <div>
+            <h4 className="font-semibold text-gray-900 mb-4">Legal</h4>
+            <ul className="space-y-3">
+              {footerLinks.legal.map((link) => (
+                <li key={link.label}>
+                  <a href={link.href} className="text-sm text-gray-500 hover:text-gray-900 transition-colors">
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Address */}
+          <div>
+            <h4 className="font-semibold text-gray-900 mb-4">Address</h4>
+            <div className="space-y-1 text-sm text-gray-500">
+              <p className="font-medium text-gray-900">Swiftwave FZ-LLC</p>
+              <p>RAKEZ Business Zone,</p>
+              <p>Al Nakheel Area,</p>
+              <p>P.O. Box No. 10055,</p>
+              <p>Ras Al Khaimah,</p>
+              <p>United Arab Emirates</p>
+            </div>
+          </div>
+
+
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="mt-12 pt-8 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-sm text-gray-400">
+            © {currentYear} CallPilot. Operated by Swiftwave FZ-LLC. All rights reserved.
+          </p>
+          
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

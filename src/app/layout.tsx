@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/components/shared/navbar";
 import { Sora } from "next/font/google";
-import Footer from "@/components/shared/footer";
-import ChatbotButton from "@/components/shared/chatbot-button";
+import LayoutWrapper from "@/components/shared/layout-wrapper";
 
 const sora = Sora({ subsets: ["latin"] });
 
@@ -21,12 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${sora.className} mx-auto w-full bg-background leading-relaxed text-text antialiased md:max-w-screen-xl`}
+        className={`${sora.className} w-full bg-background antialiased`}
       >
-        <Navbar />
-        <div className="mx-auto max-w-7xl">{children}</div>
-        <Footer />
-        <ChatbotButton/>
+        <LayoutWrapper>{children}</LayoutWrapper>
       </body>
     </html>
   );

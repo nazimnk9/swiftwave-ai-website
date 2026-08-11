@@ -635,7 +635,7 @@
 //               </svg>
 //             </a>
 //           </div>
-          
+
 //           <button
 //             className="ml-4 rounded-md border-2 border-accent px-4 py-2 text-center text-text transition-all duration-300 hover:bg-gradient-to-r hover:from-[#D2AC47] hover:via-[#F7EF8A] hover:to-[#AE8625] hover:text-black"
 //             onClick={handleNavClick}
@@ -946,7 +946,7 @@
 //               </svg>
 //             </a>
 //           </div>
-          
+
 //           <button
 //             className="ml-4 rounded-md border-2 border-accent px-4 py-2 text-center text-text transition-all duration-300 hover:bg-gradient-to-r hover:from-[#D2AC47] hover:via-[#F7EF8A] hover:to-[#AE8625] hover:text-black"
 //             onClick={handleNavClick}
@@ -1257,7 +1257,7 @@
 //               </svg>
 //             </a>
 //           </div>
-          
+
 //           <button
 //             className="ml-4 rounded-md border-2 border-accent px-4 py-2 text-center text-text transition-all duration-300 hover:bg-gradient-to-r hover:from-[#D2AC47] hover:via-[#F7EF8A] hover:to-[#AE8625] hover:text-black"
 //             onClick={handleNavClick}
@@ -1331,7 +1331,7 @@
 //               </svg>
 //             </a>
 //           </div>
-          
+
 //           {/* Hamburger/Close Button */}
 //           <button onClick={() => setIsOpen(!isOpen)}>
 //             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -1441,11 +1441,11 @@ export default function Navbar() {
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center">
           <Link href="/" onClick={handleNavClick}>
-            <Image 
-              src="/logo.png" 
-              alt="Swiftwave.AI Logo" 
-              width={140} 
-              height={140} 
+            <Image
+              src="/logo.png"
+              alt="Swiftwave.AI Logo"
+              width={140}
+              height={140}
               className="md:w-[140px] md:h-[140px] w-[80px] h-[80px]"
             />
           </Link>
@@ -1570,7 +1570,7 @@ export default function Navbar() {
               </svg>
             </a>
           </div>
-          
+
           <button
             className="ml-4 rounded-md border-2 border-accent px-4 py-2 text-center text-text transition-all duration-300 hover:bg-gradient-to-r hover:from-[#D2AC47] hover:via-[#F7EF8A] hover:to-[#AE8625] hover:text-black"
             onClick={handleNavClick}
@@ -1644,9 +1644,9 @@ export default function Navbar() {
               </svg>
             </a>
           </div>
-          
+
           {/* Hamburger/Close Button for Mobile & Tablet */}
-          <button 
+          <button
             onClick={() => setIsOpen(!isOpen)}
             className="flex items-center justify-center"
           >
@@ -1657,9 +1657,8 @@ export default function Navbar() {
 
       {/* Mobile & Tablet Navigation Menu - Shows below company logo */}
       <div
-        className={`${
-          isOpen ? "block" : "hidden"
-        } absolute left-0 top-22 z-[100] w-full space-y-4 bg-background p-4 text-center text-sm lg:hidden`}
+        className={`${isOpen ? "block" : "hidden"
+          } absolute left-0 top-22 z-[100] w-full space-y-4 bg-background p-4 text-center text-sm lg:hidden`}
       >
         <Link
           href="/"
