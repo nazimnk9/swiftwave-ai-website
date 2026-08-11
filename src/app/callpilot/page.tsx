@@ -141,7 +141,7 @@ export default function CallPilotRecruitment() {
 
                 {/* Integration Status Bar */}
                 <div className="pt-6 border-t border-white/10 max-w-2xl flex flex-wrap items-center gap-x-1 gap-y-1.5 text-white/90 text-xs sm:text-sm md:text-base font-semibold">
-                  <div className="inline-flex items-center gap-2 font-bold text-xs uppercase tracking-widest text-[#3b82f6] shrink-0 mr-1">
+                  <div className="inline-flex items-center gap-2 font-bold text-xs uppercase tracking-widest text-[#3b82f6] shrink-0 mr-0">
                     <span className="relative flex h-2.5 w-2.5">
                       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                       <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
