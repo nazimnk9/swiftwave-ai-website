@@ -68,7 +68,10 @@ export default function CallPilotRecruitment() {
 
       <main className="pt-[120px] md:pt-[145px] lg:pt-[160px]">
         {/* HERO SECTION */}
-        <section className="relative min-h-[80vh] lg:min-h-[85vh] flex items-center overflow-hidden bg-black py-20 lg:py-0">
+        <section
+          className="relative min-h-[80vh] lg:min-h-[85vh] flex items-center overflow-hidden py-20 lg:py-0"
+          style={{ background: "linear-gradient(135deg, #000000 80%, #1c1c1c 100%)" }}
+        >
           {/* Background Video - Aligned to the right half on desktop */}
           <div className="absolute top-0 right-0 w-full lg:w-1/2 h-full z-0 lg:block hidden">
             <video
