@@ -68,71 +68,102 @@ export default function CallPilotRecruitment() {
 
       <main className="pt-[120px] md:pt-[145px] lg:pt-[160px]">
         {/* HERO SECTION */}
-        <section className="relative min-h-[85vh] flex items-center justify-center py-20 overflow-hidden bg-black">
-          {/* Background Video */}
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="absolute inset-0 w-full h-full object-cover opacity-90"
-          >
-            <source src="/videos/ai-video.mov" type="video/mp4" />
-          </video>
+        <section className="relative min-h-[80vh] lg:min-h-[85vh] flex items-center overflow-hidden bg-black py-20 lg:py-0">
+          {/* Background Video - Aligned to the right half on desktop */}
+          <div className="absolute top-0 right-0 w-full lg:w-1/2 h-full z-0 lg:block hidden">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover opacity-100"
+            >
+              <source src="/videos/ai-video.mov" type="video/mp4" />
+            </video>
+            {/* Smooth transition from text content to video */}
+            <div className="absolute inset-0 bg-gradient-to-r from-black via-black/5 to-transparent pointer-events-none z-10" />
+            {/* <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black opacity-35 pointer-events-none" /> */}
+          </div>
 
-          {/* Dark overlay: 80% black -> 20% charcoal */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/80 to-[#121212]/95 pointer-events-none" />
+          {/* Full background video fallback for mobile/tablet */}
+          <div className="absolute inset-0 w-full h-full z-0 lg:hidden block">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover opacity-100"
+            >
+              <source src="/videos/ai-video.mov" type="video/mp4" />
+            </video>
+            {/* <div className="absolute inset-0 bg-black/85 pointer-events-none" /> */}
+          </div>
 
           {/* Hero Content */}
-          <div className="relative z-10 container mx-auto px-6 sm:px-8 max-w-6xl text-center">
-            {/* Top Subtext Badge */}
-            <div className="inline-flex items-center justify-center gap-2 mb-8 animate-fade-in">
-              <span className="text-[11px] sm:text-xs md:text-sm font-bold tracking-[0.2em] text-[#3b82f6] uppercase">
-                AI APPLICANT SCREENING CALLS • 24/7 • WHATSAPP AUTOMATION • SMS
-              </span>
-            </div>
+          <div className="relative z-20 container mx-auto px-6 sm:px-8 max-w-7xl">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+              
+              {/* Left Column (Left-aligned Content) */}
+              <div className="lg:col-span-7 text-left flex flex-col justify-center animate-fade-in">
+                {/* Top Subtext Badge - Split in two lines with blue dots */}
+                <div className="flex flex-col gap-1 mb-8">
+                  <div className="text-[10px] sm:text-xs md:text-sm font-black tracking-[0.22em] text-white uppercase">
+                    AI APPLICANT SCREENING CALLS <span className="text-[#3b82f6]">•</span> 24/7
+                  </div>
+                  <div className="text-[10px] sm:text-xs md:text-sm font-black tracking-[0.22em] text-white uppercase">
+                    WHATSAPP AUTOMATION <span className="text-[#3b82f6]">•</span> SMS
+                  </div>
+                </div>
 
-            {/* Single H1 constraint */}
-            <h1 className="text-4xl sm:text-6xl md:text-7xl font-black text-white leading-[1.1] mb-6 tracking-tight animate-fade-in" style={{ animationDelay: "0.1s" }}>
-              Recruiters Sleep.<br />
-              <span className="text-white">CallPilot Qualifies 24/7.</span>
-            </h1>
+                {/* Single H1 constraint */}
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1.1] mb-6 tracking-tight">
+                  Recruiters Sleep.<br />
+                  <span className="text-white">CallPilot Qualifies 24/7.</span>
+                </h1>
 
-            {/* Subheadline */}
-            <p className="text-lg sm:text-xl md:text-2xl text-white/80 font-normal max-w-3xl mx-auto mb-10 tracking-wide animate-fade-in" style={{ animationDelay: "0.2s" }}>
-              Results synced directly to your ATS or CRM.
-            </p>
+                {/* Subheadline */}
+                <p className="text-lg sm:text-xl md:text-2xl text-white/80 font-normal max-w-2xl mb-8 tracking-wide">
+                  Results synced directly to your ATS or CRM.
+                </p>
 
-            {/* CTA Button */}
-            <div className="mb-16 animate-fade-in" style={{ animationDelay: "0.3s" }}>
-              <Link href="https://panel.callpilot.pro/login">
-                <Button className="h-14 sm:h-16 px-10 sm:px-12 rounded-lg bg-[#3b82f6] hover:bg-[#2563eb] text-white text-base sm:text-lg font-bold border-none transition-all duration-200 transform hover:scale-[1.02] shadow-xl shadow-blue-500/20 group">
-                  Book a Demo
-                  <ArrowRight size={20} className="ml-2 transition-transform group-hover:translate-x-1" />
-                </Button>
-              </Link>
-            </div>
+                {/* CTA Button */}
+                <div className="mb-12">
+                  <Link href="https://panel.callpilot.pro/login">
+                    <Button className="h-14 sm:h-16 px-10 sm:px-12 rounded-lg bg-[#3b82f6] hover:bg-[#2563eb] text-white text-base sm:text-lg font-bold border-none transition-all duration-200 transform hover:scale-[1.02] shadow-xl shadow-blue-500/20 group">
+                      Book a Demo
+                      <ArrowRight size={20} className="ml-2 transition-transform group-hover:translate-x-1" />
+                    </Button>
+                  </Link>
+                </div>
 
-            {/* Integration Status Bar */}
-            <div className="pt-8 border-t border-white/10 max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 text-white/70 text-sm md:text-base animate-fade-in" style={{ animationDelay: "0.4s" }}>
-              <div className="flex items-center gap-2 font-bold text-xs uppercase tracking-widest text-[#3b82f6]">
-                <span className="relative flex h-2.5 w-2.5">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
-                </span>
-                LIVE
+                {/* Integration Status Bar */}
+                <div className="pt-6 border-t border-white/10 max-w-2xl flex flex-wrap items-center gap-x-1.5 gap-y-1.5 text-white/90 text-xs sm:text-sm md:text-base font-semibold">
+                  <div className="inline-flex items-center gap-2 font-bold text-xs uppercase tracking-widest text-[#3b82f6] shrink-0 mr-1">
+                    <span className="relative flex h-2.5 w-2.5">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                    </span>
+                    LIVE
+                  </div>
+                  <span>JobAdder</span>
+                  <span className="text-[#3b82f6] font-bold">•</span>
+                  <span className="text-[#3b82f6] font-bold">
+                    Greenhouse <span className="text-[9px] uppercase font-bold tracking-widest text-[#3b82f6]/90 bg-blue-500/10 px-1.5 py-0.5 rounded ml-1 border border-blue-500/20">In Progress</span>
+                  </span>
+                  <span className="text-[#3b82f6] font-bold">•</span>
+                  <span>Recruit CRM</span>
+                  <span className="text-[#3b82f6] font-bold">•</span>
+                  <span>Ashby</span>
+                  <span className="text-[#3b82f6] font-bold">•</span>
+                  <span className="text-white/40 mt-1">
+                    iCIMS <span className="text-[9px] uppercase font-medium tracking-widest text-white/30 border border-white/10 px-1.5 py-0.5 rounded ml-1 bg-white/10">Coming Soon</span>
+                  </span>
+                </div>
               </div>
-              <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 font-semibold text-white/90">
-                <span>JobAdder</span>
-                <span className="text-white/30">•</span>
-                <span>Greenhouse</span>
-                <span className="text-white/30">•</span>
-                <span>Recruit CRM</span>
-                <span className="text-white/30">•</span>
-                <span className="text-white/60 font-medium">Ashby (In Progress)</span>
-                <span className="text-white/30">•</span>
-                <span className="text-white/40 font-normal">iCIMS (Coming Soon)</span>
-              </div>
+
+              {/* Right Column (Spacer space for video background overlay layout) */}
+              <div className="lg:col-span-5 lg:block hidden" />
+
             </div>
           </div>
         </section>
