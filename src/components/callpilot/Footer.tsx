@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import logo from "@/assets/call_pilot_logo.png";
 
 

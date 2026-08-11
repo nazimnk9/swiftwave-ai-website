@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
 import Header from "@/components/callpilot/Header";
@@ -15,16 +16,12 @@ import {
   Settings,
   BarChart3,
   UserPlus,
-  Lock,
   RefreshCw,
-  Phone,
   Check
 } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
 
 export default function CallPilotRecruitment() {
-  const [demoOpen, setDemoOpen] = useState(false);
 
   // Applicant table rows data
   const applicantRows = [
