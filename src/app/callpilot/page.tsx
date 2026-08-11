@@ -21,6 +21,54 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 
+const CALLPILOT_PRICING_CONFIG = {
+  currencySymbol: "$",
+  addOns: {
+    aiPhoneNumber: {
+      price: 10,
+      period: "month"
+    }
+  },
+  plans: [
+    {
+      id: "starter",
+      name: "STARTER",
+      price: 199,
+      period: "month",
+      credits: 100,
+      perScreeningRate: 1.99,
+      checkoutUrl: "https://panel.callpilot.pro/checkout?plan=starter"
+    },
+    {
+      id: "growth",
+      name: "GROWTH",
+      isPopular: true,
+      price: 795,
+      period: "month",
+      credits: 500,
+      perScreeningRate: 1.59,
+      checkoutUrl: "https://panel.callpilot.pro/checkout?plan=growth"
+    },
+    {
+      id: "pro",
+      name: "PRO",
+      price: 1995,
+      period: "month",
+      credits: 1500,
+      perScreeningRate: 1.33,
+      checkoutUrl: "https://panel.callpilot.pro/checkout?plan=pro"
+    },
+    {
+      id: "enterprise",
+      name: "ENTERPRISE",
+      isEnterprise: true,
+      priceLabel: "High Volume?",
+      subLabel: "Custom Volume Pricing",
+      checkoutUrl: "mailto:sales@swiftwave.ai?subject=CallPilot%20Enterprise%20Inquiry"
+    }
+  ]
+};
+
 export default function CallPilotRecruitment() {
 
   // Applicant table rows data
@@ -58,16 +106,75 @@ export default function CallPilotRecruitment() {
           text-shadow: none;
         }
 
-        /* Hover Treatment */
-        .btn-premium {
-          background-color: var(--ai-blue) !important;
-          transition: all 200ms ease-in-out !important;
+        /* Premium Buttons */
+        .btn-white-section {
+          background-color: #05070A !important;
+          color: #FFFFFF !important;
+          font-weight: 700 !important;
+          border-radius: 8px !important;
+          height: 44px !important;
+          padding-left: 20px !important;
+          padding-right: 20px !important;
+          display: inline-flex !important;
+          align-items: center !important;
+          justify-content: center !important;
+          transition: transform 200ms ease, box-shadow 200ms ease, background-color 200ms ease !important;
           border: 1px solid transparent !important;
+          outline: none;
         }
-        .btn-premium:hover {
-          border-color: var(--ai-blue) !important;
-          box-shadow: 0 10px 30px rgba(6, 103, 249, 0.22) !important;
+        @media (min-width: 1024px) {
+          .btn-white-section {
+            height: 40px !important;
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+          }
+        }
+        .btn-white-section:hover {
           transform: translateY(-2px) !important;
+          box-shadow: 0 6px 20px rgba(6, 103, 249, 0.22) !important;
+        }
+        .btn-white-section:active {
+          transform: translateY(0) scale(0.98) !important;
+          box-shadow: 0 2px 8px rgba(6, 103, 249, 0.1) !important;
+        }
+        .btn-white-section:focus-visible {
+          outline: 2px solid #0667F9 !important;
+          outline-offset: 2px !important;
+        }
+
+        .btn-dark-section {
+          background-color: #FFFFFF !important;
+          color: #05070A !important;
+          font-weight: 700 !important;
+          border-radius: 8px !important;
+          height: 44px !important;
+          padding-left: 20px !important;
+          padding-right: 20px !important;
+          display: inline-flex !important;
+          align-items: center !important;
+          justify-content: center !important;
+          transition: transform 200ms ease, box-shadow 200ms ease, background-color 200ms ease !important;
+          border: 1px solid transparent !important;
+          outline: none;
+        }
+        @media (min-width: 1024px) {
+          .btn-dark-section {
+            height: 40px !important;
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+          }
+        }
+        .btn-dark-section:hover {
+          transform: translateY(-2px) !important;
+          box-shadow: 0 6px 20px rgba(6, 103, 249, 0.22) !important;
+        }
+        .btn-dark-section:active {
+          transform: translateY(0) scale(0.98) !important;
+          box-shadow: 0 2px 8px rgba(6, 103, 249, 0.1) !important;
+        }
+        .btn-dark-section:focus-visible {
+          outline: 2px solid #0667F9 !important;
+          outline-offset: 2px !important;
         }
 
         .card-premium {
@@ -101,6 +208,21 @@ export default function CallPilotRecruitment() {
         }
         .glowing-pulsing-green {
           animation: pulse-gasp 1.8s infinite ease-in-out;
+        }
+        @keyframes ticker-loop {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        .ticker-wrapper {
+          display: flex;
+          width: max-content;
+          gap: 2rem;
+          animation: ticker-loop 20s linear infinite;
+        }
+        .ticker-track {
+          display: flex;
+          align-items: center;
+          gap: 5px;
         }
       `}} />
 
@@ -173,35 +295,64 @@ export default function CallPilotRecruitment() {
                 {/* CTA Button */}
                 <div className="mb-12">
                   <Link href="https://panel.callpilot.pro/login">
-                    <Button className="btn-premium h-14 sm:h-16 px-10 sm:px-12 rounded-lg text-white text-base sm:text-lg font-bold border-none group">
+                    <Button className="btn-dark-section group">
                       Book a Demo
                       <ArrowRight size={20} className="ml-2 transition-transform group-hover:translate-x-1" />
                     </Button>
                   </Link>
                 </div>
 
-                {/* Integration Status Bar */}
-                <div className="pt-6 border-t border-white/10 max-w-2xl flex flex-wrap items-center gap-x-1.5 gap-y-1.5 text-white/90 text-xs sm:text-sm md:text-base font-semibold">
-                  <div className="inline-flex items-center gap-2 font-bold text-xs uppercase tracking-widest text-[#0667F9] shrink-0 mr-1">
-                    <span className="relative flex h-2.5 w-2.5">
-                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                      <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
-                    </span>
-                    LIVE
+                {/* Integration Status Bar Carousel Ticker */}
+                <div className="pt-6 border-t border-white/10 max-w-2xl overflow-hidden relative">
+                  <div className="ticker-wrapper text-white/90 text-xs sm:text-sm md:text-base font-semibold">
+                    {/* First Track */}
+                    <div className="ticker-track">
+                      <div className="inline-flex items-center gap-1 font-bold text-xs uppercase tracking-widest text-[#0667F9] shrink-0 mr-0">
+                        <span className="relative flex h-2.5 w-2.5">
+                          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                          <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                        </span>
+                        LIVE
+                      </div>
+                      <span>JobAdder</span>
+                      <span className="text-[#0667F9] font-bold">•</span>
+                      <span>Recruit CRM</span>
+                      <span className="text-[#0667F9] font-bold">•</span>
+                      <span className="text-white font-bold">
+                        Greenhouse <span className="text-[9px] uppercase font-bold tracking-widest text-[#0667F9]/90 bg-[#0667F9]/10 px-1.5 py-0.5 rounded ml-0 border border-[#0667F9]">In Progress</span>
+                      </span>
+                      <span className="text-[#0667F9] font-bold">•</span>
+                      <span>Ashby</span>
+                      <span className="text-[#0667F9] font-bold">•</span>
+                      <span className="text-white mt-1">
+                        iCIMS <span className="text-[9px] uppercase font-medium tracking-widest text-white border border-white px-1.5 py-0.5 rounded ml-0 bg-white/10">Coming Soon</span>
+                      </span>
+                    </div>
+
+                    {/* Second Track (Duplicate for seamless animation loop) */}
+                    <div className="ticker-track" aria-hidden="true">
+                      <div className="inline-flex items-center gap-1 font-bold text-xs uppercase tracking-widest text-[#0667F9] shrink-0 mr-1">
+                        <span className="relative flex h-2.5 w-2.5">
+                          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                          <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                        </span>
+                        LIVE
+                      </div>
+                      <span>JobAdder</span>
+                      <span className="text-[#0667F9] font-bold">•</span>
+                      <span>Recruit CRM</span>
+                      <span className="text-[#0667F9] font-bold">•</span>
+                      <span className="text-white font-bold">
+                        Greenhouse <span className="text-[9px] uppercase font-bold tracking-widest text-[#0667F9]/90 bg-[#0667F9]/10 px-1.5 py-0.5 rounded ml-0 border border-[#0667F9]">In Progress</span>
+                      </span>
+                      <span className="text-[#0667F9] font-bold">•</span>
+                      <span>Ashby</span>
+                      <span className="text-[#0667F9] font-bold">•</span>
+                      <span className="text-white mt-1">
+                        iCIMS <span className="text-[9px] uppercase font-medium tracking-widest text-white border border-white px-1.5 py-0.5 rounded ml-0 bg-white/10">Coming Soon</span>
+                      </span>
+                    </div>
                   </div>
-                  <span>JobAdder</span>
-                  <span className="text-[#0667F9] font-bold">•</span>
-                  <span>Recruit CRM</span>
-                  <span className="text-[#0667F9] font-bold">•</span>
-                  <span className="text-white font-bold">
-                    Greenhouse <span className="text-[9px] uppercase font-bold tracking-widest text-[#0667F9]/90 bg-[#0667F9]/10 px-1.5 py-0.5 rounded ml-0 border border-[#0667F9]">In Progress</span>
-                  </span>
-                  <span className="text-[#0667F9] font-bold">•</span>
-                  <span>Ashby</span>
-                  <span className="text-[#0667F9] font-bold">•</span>
-                  <span className="text-white mt-1">
-                    iCIMS <span className="text-[9px] uppercase font-medium tracking-widest text-white border border-white px-1.5 py-0.5 rounded ml-0 bg-white/10">Coming Soon</span>
-                  </span>
                 </div>
               </div>
 
@@ -284,7 +435,7 @@ export default function CallPilotRecruitment() {
               {/* Metric 1 */}
               <div className="pt-6 sm:pt-0 first:pt-0">
                 <div className="text-3xl lg:text-4xl font-extrabold text-[#0667F9] tracking-tight">~60 SECONDS</div>
-                <div className="text-xs uppercase tracking-widest text-[#0667F9] font-bold mt-1">SECONDS</div>
+                {/* <div className="text-xs uppercase tracking-widest text-[#0667F9] font-bold mt-1">SECONDS</div> */}
                 <div className="text-sm text-[#36454F] font-medium mt-1">Average screening call</div>
               </div>
 
@@ -520,97 +671,122 @@ export default function CallPilotRecruitment() {
           <div className="container mx-auto px-6 sm:px-8 max-w-7xl">
             {/* Header Block */}
             <div className="text-center mb-16">
-              <span className="text-xs font-bold tracking-widest text-[#0667F9] uppercase">PRICING</span>
               <h2 className="text-3xl sm:text-5xl font-black text-[#05070A] tracking-tight mt-2 mb-3">
-                Prepaid Pricing
+                Choose Your Screening Plan
               </h2>
-              <div className="text-xl sm:text-2xl font-extrabold text-[#0667F9] mb-3">
+              <div className="text-xl sm:text-2xl font-extrabold text-[#36454F] mb-3">
                 No Answer. No Charge.
               </div>
-              {/* <p className="text-[#36454F] font-medium max-w-2xl mx-auto text-sm sm:text-base">
-                You only pay when an applicant completes the screening call — qualified or unqualified.
-              </p> */}
             </div>
 
-            {/* Three Columns Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch max-w-6xl mx-auto mb-16">
+            {/* Four Columns Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch max-w-7xl mx-auto mb-12">
+              {CALLPILOT_PRICING_CONFIG.plans.map((plan) => {
+                const isGrowth = plan.id === "growth";
+                return (
+                  <div
+                    key={plan.id}
+                    className={`bg-white rounded-xl p-8 flex flex-col justify-between relative transition-all duration-200 ${
+                      isGrowth
+                        ? "border-2 border-[#0667F9] shadow-md shadow-blue-100/50"
+                        : "border border-gray-200/80 shadow-sm"
+                    }`}
+                  >
+                    {isGrowth && (
+                      <div className="absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 bg-[#0667F9] text-white text-[10px] font-black uppercase tracking-wider px-4 py-1 rounded-full">
+                        MOST POPULAR
+                      </div>
+                    )}
+                    
+                    <div className="flex-grow flex flex-col">
+                      <h3 className={`text-xs font-extrabold tracking-widest uppercase mb-2 ${isGrowth ? 'mt-2' : ''} text-[#36454F]`}>
+                        {plan.name}
+                      </h3>
+                      
+                      {plan.isEnterprise ? (
+                        <div className="mb-6 flex-grow flex flex-col justify-center">
+                          <div className="text-3xl sm:text-4xl font-black text-[#05070A] mb-2 leading-none">
+                            {plan.priceLabel}
+                          </div>
+                          <div className="text-sm font-semibold text-[#36454F]">
+                            {plan.subLabel}
+                          </div>
+                        </div>
+                      ) : (
+                        <div className="mb-6">
+                          <div className="text-4xl sm:text-5xl font-black text-[#05070A] mb-6">
+                            ${(plan.price ?? 0).toLocaleString()} <span className="text-sm font-normal text-[#36454F]">/ month</span>
+                          </div>
+                          <div className="border-t border-gray-100 pt-6 space-y-4">
+                            <div className="font-semibold text-[#36454F] text-sm sm:text-base">
+                              {(plan.credits ?? 0).toLocaleString()} Applicant Screenings
+                            </div>
+                            <div className="text-[#36454F] text-sm font-medium">
+                              ${(plan.perScreeningRate ?? 0).toFixed(2)} per screening
+                            </div>
+                          </div>
+                        </div>
+                      )}
+                    </div>
 
-              {/* Starter Package */}
-              <div className="bg-white rounded-xl border border-gray-200/80 p-8 flex flex-col justify-between card-premium">
-                <div>
-                  <h3 className="text-xs font-extrabold tracking-widest text-gray-400 uppercase mb-2">STARTER</h3>
-                  <div className="text-4xl sm:text-5xl font-black text-[#05070A] mb-6">
-                    $199
+                    <div className="mt-8">
+                      <Link href={plan.checkoutUrl} className="w-full">
+                        <Button className="btn-white-section w-full">
+                          {plan.isEnterprise ? "Contact Sales" : "Start Screening"}
+                        </Button>
+                      </Link>
+                    </div>
                   </div>
-                  <div className="border-t border-gray-100 pt-6 space-y-4 mb-8">
-                    <div className="font-semibold text-[#36454F] text-sm sm:text-base">100 Applicant Screenings</div>
-                    <div className="text-[#36454F] text-sm font-medium">$1.99 per screening</div>
-                  </div>
-                </div>
-                <Link href="https://panel.callpilot.pro/login" className="w-full">
-                  <Button variant="outline" className="w-full h-12 text-[#0667F9] border-[#0667F9] hover:bg-blue-50 font-bold rounded-lg card-premium">
-                    Start Screening
-                  </Button>
-                </Link>
-              </div>
-
-              {/* Growth Package (Most Popular) */}
-              <div className="bg-white rounded-xl border-2 border-[#0667F9] relative p-8 flex flex-col justify-between card-premium shadow-md shadow-blue-500/10">
-                <div className="absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 bg-[#0667F9] text-white text-[10px] font-black uppercase tracking-wider px-4 py-1 rounded-full">
-                  MOST POPULAR
-                </div>
-                <div>
-                  <h3 className="text-xs font-extrabold tracking-widest text-[#0667F9] uppercase mb-2 mt-2">GROWTH</h3>
-                  <div className="text-4xl sm:text-5xl font-black text-[#05070A] mb-6">
-                    $745
-                  </div>
-                  <div className="border-t border-gray-100 pt-6 space-y-4 mb-8">
-                    <div className="font-semibold text-[#36454F] text-sm sm:text-base">500 Applicant Screenings</div>
-                    <div className="text-[#0667F9] font-bold text-sm">$1.49 per screening</div>
-                  </div>
-                </div>
-                <Link href="https://panel.callpilot.pro/login" className="w-full">
-                  <Button className="w-full h-12 bg-[#0667F9] hover:bg-[#0556d6] text-white font-bold rounded-lg border-none shadow-md shadow-blue-500/20 card-premium">
-                    Start Screening
-                  </Button>
-                </Link>
-              </div>
-
-              {/* Enterprise Package */}
-              <div className="bg-white rounded-xl border border-gray-200/80 p-8 flex flex-col justify-between card-premium">
-                <div>
-                  <h3 className="text-xs font-extrabold tracking-widest text-gray-400 uppercase mb-2">ENTERPRISE</h3>
-                  <div className="text-3xl sm:text-4xl font-black text-[#05070A] mb-2 leading-none">
-                    High Volume?
-                  </div>
-                  <div className="text-sm font-semibold text-[#36454F] mb-6">Custom Volume Pricing</div>
-                  <div className="border-t border-gray-100 pt-6 space-y-4 mb-8">
-                    <div className="font-semibold text-[#36454F] text-sm sm:text-base">High Applicant Volumes</div>
-                    <div className="text-[#36454F] text-sm font-medium">Bespoke SLA & integrations</div>
-                  </div>
-                </div>
-                <Link href="https://panel.callpilot.pro/login" className="w-full">
-                  <Button variant="outline" className="w-full h-12 text-[#0667F9] border-[#0667F9] hover:bg-blue-50 font-bold rounded-lg card-premium">
-                    Contact Sales
-                  </Button>
-                </Link>
-              </div>
-
+                );
+              })}
             </div>
 
-            {/* Bottom pricing assurances footer */}
-            <div className="border-t border-gray-100 pt-8 max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6 text-sm text-[#36454F] font-semibold text-center sm:text-left">
-              <div className="flex items-center gap-2">
-                <FileText size={18} className="text-[#0667F9]" />
-                <span>Prepaid screening credits</span>
+            {/* INCLUDED AUTOMATION */}
+            <div className="text-center mb-12">
+              <p className="text-sm font-semibold text-[#36454F]">
+                All plans include WhatsApp, SMS and email automation
+              </p>
+            </div>
+
+            {/* PLAN INFORMATION */}
+            <div className="border-t border-gray-200/60 pt-8 pb-10 max-w-5xl mx-auto">
+              <div className="flex flex-col md:flex-row items-center justify-center gap-y-4 gap-x-8 text-sm text-[#36454F] font-semibold text-center divide-y md:divide-y-0 md:divide-x divide-gray-200">
+                <div className="w-full md:w-auto px-4">
+                  Prepaid monthly screening credits
+                </div>
+                <div className="w-full md:w-auto px-4 pt-4 md:pt-0">
+                  Credits used on completed calls only
+                </div>
+                <div className="w-full md:w-auto px-4 pt-4 md:pt-0">
+                  Optional automatic credit top-up
+                </div>
+                <div className="w-full md:w-auto px-4 pt-4 md:pt-0">
+                  Upgrade your plan at any time
+                </div>
               </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 size={18} className="text-[#0667F9]" />
-                <span>Only completed calls use a credit</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <RefreshCw size={18} className="text-[#0667F9]" />
-                <span>Optional auto top-up</span>
+            </div>
+
+            {/* CALLING AND AUTOMATION PANEL */}
+            <div className="max-w-4xl mx-auto bg-white rounded-xl border border-gray-200/80 shadow-sm p-6 sm:p-8">
+              <div className="flex flex-col gap-4 text-sm text-[#36454F] font-medium leading-relaxed">
+                <div className="flex items-start gap-3">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#0667F9] shrink-0 mt-2" />
+                  <span>
+                    Optional AI phone number: $10 per month, or connect an existing compatible number
+                  </span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#0667F9] shrink-0 mt-2" />
+                  <span>
+                    SMS availability is based on the country associated with the phone number
+                  </span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#0667F9] shrink-0 mt-2" />
+                  <span>
+                    Email automation included as a fallback
+                  </span>
+                </div>
               </div>
             </div>
           </div>
@@ -632,7 +808,7 @@ export default function CallPilotRecruitment() {
 
             <div className="mb-8">
               <Link href="https://panel.callpilot.pro/login">
-                <Button className="h-14 px-10 rounded-lg bg-[#3b82f6] hover:bg-[#2563eb] text-white text-base font-bold border-none transition-all duration-200 shadow-xl shadow-blue-500/25 group">
+                <Button className="btn-dark-section group">
                   Book a Demo
                   <ArrowRight size={18} className="ml-2 transition-transform group-hover:translate-x-1" />
                 </Button>
