@@ -70,7 +70,7 @@ export default function CallPilotRecruitment() {
         {/* HERO SECTION */}
         <section
           className="relative min-h-[80vh] lg:min-h-[85vh] flex items-center overflow-hidden py-20 lg:py-0"
-          style={{ background: "linear-gradient(135deg, #000000 80%, #1c1c1c 100%)" }}
+          style={{ background: "linear-gradient(135deg, #000000 80%, #1c1c1c 20%)" }}
         >
           {/* Background Video - Aligned to the right half on desktop */}
           <div className="absolute top-0 right-0 w-full lg:w-1/2 h-full z-0 lg:block hidden">
@@ -105,7 +105,7 @@ export default function CallPilotRecruitment() {
           {/* Hero Content */}
           <div className="relative z-20 container mx-auto px-6 sm:px-8 max-w-7xl">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-              
+
               {/* Left Column (Left-aligned Content) */}
               <div className="lg:col-span-7 text-left flex flex-col justify-center animate-fade-in">
                 {/* Top Subtext Badge - Split in two lines with blue dots */}
@@ -140,7 +140,7 @@ export default function CallPilotRecruitment() {
                 </div>
 
                 {/* Integration Status Bar */}
-                <div className="pt-6 border-t border-white/10 max-w-2xl flex flex-wrap items-center gap-x-1.5 gap-y-1.5 text-white/90 text-xs sm:text-sm md:text-base font-semibold">
+                <div className="pt-6 border-t border-white/10 max-w-2xl flex flex-wrap items-center gap-x-1 gap-y-1.5 text-white/90 text-xs sm:text-sm md:text-base font-semibold">
                   <div className="inline-flex items-center gap-2 font-bold text-xs uppercase tracking-widest text-[#3b82f6] shrink-0 mr-1">
                     <span className="relative flex h-2.5 w-2.5">
                       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
@@ -150,16 +150,16 @@ export default function CallPilotRecruitment() {
                   </div>
                   <span>JobAdder</span>
                   <span className="text-[#3b82f6] font-bold">•</span>
-                  <span className="text-[#3b82f6] font-bold">
-                    Greenhouse <span className="text-[9px] uppercase font-bold tracking-widest text-[#3b82f6]/90 bg-blue-500/10 px-1.5 py-0.5 rounded ml-1 border border-blue-500/20">In Progress</span>
-                  </span>
-                  <span className="text-[#3b82f6] font-bold">•</span>
                   <span>Recruit CRM</span>
+                  <span className="text-[#3b82f6] font-bold">•</span>
+                  <span className="text-[#3b82f6] font-bold">
+                    Greenhouse <span className="text-[9px] uppercase font-bold tracking-widest text-[#3b82f6]/90 bg-blue-500/10 px-1.5 py-0.5 rounded ml-0 border border-blue-500">In Progress</span>
+                  </span>
                   <span className="text-[#3b82f6] font-bold">•</span>
                   <span>Ashby</span>
                   <span className="text-[#3b82f6] font-bold">•</span>
-                  <span className="text-white/40 mt-1">
-                    iCIMS <span className="text-[9px] uppercase font-medium tracking-widest text-white/30 border border-white/10 px-1.5 py-0.5 rounded ml-1 bg-white/10">Coming Soon</span>
+                  <span className="text-white mt-1">
+                    iCIMS <span className="text-[9px] uppercase font-medium tracking-widest text-white border border-white px-1.5 py-0.5 rounded ml-0 bg-white/10">Coming Soon</span>
                   </span>
                 </div>
               </div>
