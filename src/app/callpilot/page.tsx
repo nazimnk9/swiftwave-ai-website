@@ -235,8 +235,8 @@ export default function CallPilotRecruitment() {
           className="relative min-h-[80vh] lg:min-h-[85vh] flex items-center overflow-hidden py-20 lg:py-0"
           style={{ background: "linear-gradient(135deg, #000000 80%, #1c1c1c 20%)" }}
         >
-          {/* Background Video - Aligned to the right half on desktop */}
-          <div className="absolute top-0 right-0 w-full lg:w-1/2 h-full z-0 lg:block hidden">
+          {/* Full background video for all viewports */}
+          <div className="absolute inset-0 w-full h-full z-0">
             <video
               autoPlay
               loop
@@ -246,119 +246,96 @@ export default function CallPilotRecruitment() {
             >
               <source src="/videos/ai-video.mov" type="video/mp4" />
             </video>
-            {/* Smooth transition from text content to video */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black via-black/5 to-transparent pointer-events-none z-10" />
-            {/* <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black opacity-35 pointer-events-none" /> */}
-          </div>
-
-          {/* Full background video fallback for mobile/tablet */}
-          <div className="absolute inset-0 w-full h-full z-0 lg:hidden block">
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-full object-cover opacity-100"
-            >
-              <source src="/videos/ai-video.mov" type="video/mp4" />
-            </video>
-            {/* <div className="absolute inset-0 bg-black/85 pointer-events-none" /> */}
+            {/* Overlay to ensure text readability */}
+            {/* <div className="absolute inset-0 bg-black/60 pointer-events-none z-10" /> */}
           </div>
 
           {/* Hero Content */}
-          <div className="relative z-20 container mx-auto px-6 sm:px-8 max-w-7xl">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-
-              {/* Left Column (Left-aligned Content) */}
-              <div className="lg:col-span-7 text-left flex flex-col justify-center animate-fade-in">
-                {/* Top Subtext Badge - Split in two lines with blue dots */}
-                <div className="flex flex-col gap-1 mb-8">
-                  <div className="text-[10px] sm:text-xs md:text-sm font-black tracking-[0.22em] text-white uppercase">
-                    AI APPLICANT SCREENING CALLS <span className="text-[#0667F9]">•</span> 24/7
-                  </div>
-                  <div className="text-[10px] sm:text-xs md:text-sm font-black tracking-[0.22em] text-white uppercase">
-                    WHATSAPP <span className="text-[#0667F9]">•</span> SMS <span className="text-[#0667F9]">•</span> AUTOMATION
-                  </div>
+          <div className="relative z-20 container mx-auto px-6 sm:px-8 max-w-7xl flex justify-center">
+            <div className="max-w-4xl text-center flex flex-col items-center justify-center animate-fade-in">
+              {/* Top Subtext Badge - Split in two lines with blue dots */}
+              <div className="flex flex-col gap-1 mb-8 items-center">
+                <div className="text-[10px] sm:text-xs md:text-sm font-black tracking-[0.22em] text-white uppercase text-center">
+                  AI APPLICANT SCREENING CALLS <span className="text-[#0667F9]">•</span> 24/7
                 </div>
-
-                {/* Single H1 constraint */}
-                <h1 className="hero-title mb-6">
-                  Recruiters Sleep.<br />
-                  CallPilot Qualifies 24/7.
-                </h1>
-
-                {/* Subheadline */}
-                <p className="text-lg sm:text-xl md:text-2xl text-white/80 font-normal max-w-2xl mb-8 tracking-wide">
-                   Documents synced directly to your ATS or CRM.
-                </p>
-
-                {/* CTA Button */}
-                <div className="mb-12">
-                  <Link href="https://panel.callpilot.pro/login">
-                    <Button className="btn-dark-section group">
-                      Book a Demo
-                      <ArrowRight size={20} className="ml-2 transition-transform group-hover:translate-x-1" />
-                    </Button>
-                  </Link>
-                </div>
-
-                {/* Integration Status Bar Carousel Ticker */}
-                <div className="pt-6 border-t border-white/10 max-w-2xl overflow-hidden relative">
-                  <div className="ticker-wrapper text-white/90 text-xs sm:text-sm md:text-base font-semibold">
-                    {/* First Track */}
-                    <div className="ticker-track">
-                      <div className="inline-flex items-center gap-1 font-bold text-xs uppercase tracking-widest text-[#0667F9] shrink-0 mr-0">
-                        <span className="relative flex h-2.5 w-2.5">
-                          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                          <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
-                        </span>
-                        LIVE
-                      </div>
-                      <span>JobAdder</span>
-                      <span className="text-[#0667F9] font-bold">•</span>
-                      <span>Recruit CRM</span>
-                      <span className="text-[#0667F9] font-bold">•</span>
-                      <span className="text-white font-bold">
-                        Greenhouse <span className="text-[9px] uppercase font-bold tracking-widest text-[#0667F9]/90 bg-[#0667F9]/10 px-1.5 py-0.5 rounded ml-0 border border-[#0667F9]">In Progress</span>
-                      </span>
-                      <span className="text-[#0667F9] font-bold">•</span>
-                      <span>Ashby</span>
-                      <span className="text-[#0667F9] font-bold">•</span>
-                      <span className="text-white mt-1">
-                        iCIMS <span className="text-[9px] uppercase font-medium tracking-widest text-white border border-white px-1.5 py-0.5 rounded ml-0 bg-white/10">Coming Soon</span>
-                      </span>
-                    </div>
-
-                    {/* Second Track (Duplicate for seamless animation loop) */}
-                    <div className="ticker-track" aria-hidden="true">
-                      <div className="inline-flex items-center gap-1 font-bold text-xs uppercase tracking-widest text-[#0667F9] shrink-0 mr-1">
-                        <span className="relative flex h-2.5 w-2.5">
-                          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                          <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
-                        </span>
-                        LIVE
-                      </div>
-                      <span>JobAdder</span>
-                      <span className="text-[#0667F9] font-bold">•</span>
-                      <span>Recruit CRM</span>
-                      <span className="text-[#0667F9] font-bold">•</span>
-                      <span className="text-white font-bold">
-                        Greenhouse <span className="text-[9px] uppercase font-bold tracking-widest text-[#0667F9]/90 bg-[#0667F9]/10 px-1.5 py-0.5 rounded ml-0 border border-[#0667F9]">In Progress</span>
-                      </span>
-                      <span className="text-[#0667F9] font-bold">•</span>
-                      <span>Ashby</span>
-                      <span className="text-[#0667F9] font-bold">•</span>
-                      <span className="text-white mt-1">
-                        iCIMS <span className="text-[9px] uppercase font-medium tracking-widest text-white border border-white px-1.5 py-0.5 rounded ml-0 bg-white/10">Coming Soon</span>
-                      </span>
-                    </div>
-                  </div>
+                <div className="text-[10px] sm:text-xs md:text-sm font-black tracking-[0.22em] text-white uppercase text-center">
+                  WHATSAPP <span className="text-[#0667F9]">•</span> SMS <span className="text-[#0667F9]">•</span> AUTOMATION
                 </div>
               </div>
 
-              {/* Right Column (Spacer space for video background overlay layout) */}
-              <div className="lg:col-span-5 lg:block hidden" />
+              {/* Single H1 constraint */}
+              <h1 className="hero-title mb-6 text-center">
+                Recruiters Sleep.<br />
+                CallPilot Qualifies 24/7.
+              </h1>
 
+              {/* Subheadline */}
+              <p className="text-lg sm:text-xl md:text-2xl text-white/80 font-normal max-w-2xl mb-8 tracking-wide text-center mx-auto">
+                 Documents synced directly to your ATS or CRM.
+              </p>
+
+              {/* CTA Button */}
+              <div className="mb-12 flex justify-center">
+                <Link href="https://panel.callpilot.pro/login">
+                  <Button className="btn-dark-section group">
+                    Book a Demo
+                    <ArrowRight size={20} className="ml-2 transition-transform group-hover:translate-x-1" />
+                  </Button>
+                </Link>
+              </div>
+
+              {/* Integration Status Bar Carousel Ticker */}
+              <div className="pt-6 border-t border-white/10 w-full max-w-2xl overflow-hidden relative mx-auto">
+                <div className="ticker-wrapper text-white/90 text-xs sm:text-sm md:text-base font-semibold">
+                  {/* First Track */}
+                  <div className="ticker-track">
+                    <div className="inline-flex items-center gap-1 font-bold text-xs uppercase tracking-widest text-[#0667F9] shrink-0 mr-0">
+                      <span className="relative flex h-2.5 w-2.5">
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                        <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                      </span>
+                      LIVE
+                    </div>
+                    <span>JobAdder</span>
+                    <span className="text-[#0667F9] font-bold">•</span>
+                    <span>Recruit CRM</span>
+                    <span className="text-[#0667F9] font-bold">•</span>
+                    <span className="text-white font-bold">
+                      Greenhouse <span className="text-[9px] uppercase font-bold tracking-widest text-[#0667F9]/90 bg-[#0667F9]/10 px-1.5 py-0.5 rounded ml-0 border border-[#0667F9]">In Progress</span>
+                    </span>
+                    <span className="text-[#0667F9] font-bold">•</span>
+                    <span>Ashby</span>
+                    <span className="text-[#0667F9] font-bold">•</span>
+                    <span className="text-white mt-1">
+                      iCIMS <span className="text-[9px] uppercase font-medium tracking-widest text-white border border-white px-1.5 py-0.5 rounded ml-0 bg-white/10">Coming Soon</span>
+                    </span>
+                  </div>
+
+                  {/* Second Track (Duplicate for seamless animation loop) */}
+                  <div className="ticker-track" aria-hidden="true">
+                    <div className="inline-flex items-center gap-1 font-bold text-xs uppercase tracking-widest text-[#0667F9] shrink-0 mr-1">
+                      <span className="relative flex h-2.5 w-2.5">
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                        <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                      </span>
+                      LIVE
+                    </div>
+                    <span>JobAdder</span>
+                    <span className="text-[#0667F9] font-bold">•</span>
+                    <span>Recruit CRM</span>
+                    <span className="text-[#0667F9] font-bold">•</span>
+                    <span className="text-white font-bold">
+                      Greenhouse <span className="text-[9px] uppercase font-bold tracking-widest text-[#0667F9]/90 bg-[#0667F9]/10 px-1.5 py-0.5 rounded ml-0 border border-[#0667F9]">In Progress</span>
+                    </span>
+                    <span className="text-[#0667F9] font-bold">•</span>
+                    <span>Ashby</span>
+                    <span className="text-[#0667F9] font-bold">•</span>
+                    <span className="text-white mt-1">
+                      iCIMS <span className="text-[9px] uppercase font-medium tracking-widest text-white border border-white px-1.5 py-0.5 rounded ml-0 bg-white/10">Coming Soon</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -369,13 +346,13 @@ export default function CallPilotRecruitment() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
               {/* Copy Side */}
               <div className="lg:col-span-5 flex flex-col justify-center">
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#05070A] leading-[1.15] mb-6 tracking-tight">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#05070A] leading-[1.15] mb-3 tracking-tight">
                   500 Applicants<br />
                   Over the Weekend.
                 </h2>
-                <div className="text-2xl sm:text-3xl font-extrabold text-[#0667F9] leading-tight mb-2">
+                {/* <div className="text-2xl sm:text-3xl font-extrabold text-[#0667F9] leading-tight mb-2">
                   50 Qualified.
-                </div>
+                </div> */}
                 <div className="text-xl sm:text-2xl font-bold text-[#05070A] leading-tight">
                   ATS Automatically Updated.<br />
                   Documents Received.
@@ -454,7 +431,7 @@ export default function CallPilotRecruitment() {
               {/* Metric 4 */}
               <div className="pt-6 sm:pt-0 md:pl-6">
                 <div className="text-xs uppercase tracking-widest text-[#0667F9] font-bold">FROM</div>
-                <div className="text-3xl lg:text-4xl font-extrabold text-[#0667F9] tracking-tight">$1.49</div>
+                <div className="text-3xl lg:text-4xl font-extrabold text-[#0667F9] tracking-tight">$1.33</div>
                 <div className="text-sm text-[#36454F] font-medium mt-1">Per screening call</div>
               </div>
 
