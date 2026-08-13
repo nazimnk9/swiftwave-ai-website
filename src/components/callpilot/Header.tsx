@@ -176,11 +176,11 @@ const Header = () => {
   ];
 
   const navLinks = [
-    { label: "Features", href: "/features" },
-    { label: "Use Cases", href: "/use-cases" },
-    { label: "Try It", href: "/try-ai-call" },
-    { label: "Pricing", href: "/pricing" },
-    { label: "Integrations", href: "/integrations" },
+    { label: "Features", href: "https://callpilot.pro/features" },
+    { label: "Use Cases", href: "https://callpilot.pro/use-cases" },
+    { label: "Try It", href: "https://callpilot.pro/try-ai-call" },
+    { label: "Pricing", href: "https://callpilot.pro/pricing" },
+    { label: "Integrations", href: "https://callpilot.pro/integrations" },
   ];
 
   // Replace these with your real profile URLs
@@ -214,7 +214,7 @@ const Header = () => {
       <div className="container mx-auto pl-0 pr-[18px] sm:pl-0 sm:pr-[26px] lg:pl-0 lg:pr-[35px]">
         <div className="flex items-center justify-between h-[120px] md:h-[145px] lg:h-[160px]">
           {/* Logo */}
-          <Link href="/" className="flex items-center -ml-[24px] md:-ml-[40px] lg:-ml-[50px]">
+          <Link href="https://callpilot.pro/" className="flex items-center -ml-[24px] md:-ml-[40px] lg:-ml-[50px]">
             <img
               src={logo.src}
               alt="CallPilot.pro"
@@ -277,9 +277,9 @@ const Header = () => {
               </Button>
             </Link>
 
-            <Link href="https://panel.callpilot.pro/login">
+            <Link href="https://callpilot.pro/get-started">
               <Button variant="cta" size="default">
-                Book a Demo
+                Get Started
               </Button>
             </Link>
           </div>
@@ -340,9 +340,9 @@ const Header = () => {
                     Sign In
                   </Button>
                 </Link>
-                <Link href="https://panel.callpilot.pro/login" className="w-full">
+                <Link href="https://callpilot.pro/get-started" className="w-full">
                   <Button variant="cta" size="lg" className="w-full">
-                    Book a Demo
+                    Get Started
                   </Button>
                 </Link>
               </div>
