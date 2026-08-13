@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
+import { useState } from "react";
 import Header from "@/components/callpilot/Header";
 import Footer from "@/components/callpilot/Footer";
 import { Button } from "@/components/callpilot/ui/button";
@@ -70,6 +71,7 @@ const CALLPILOT_PRICING_CONFIG = {
 };
 
 export default function CallPilotRecruitment() {
+  const [hoveredPlan, setHoveredPlan] = useState<string | null>(null);
 
   // Applicant table rows data
   const applicantRows = [
@@ -660,16 +662,20 @@ export default function CallPilotRecruitment() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch max-w-7xl mx-auto mb-12">
               {CALLPILOT_PRICING_CONFIG.plans.map((plan) => {
                 const isGrowth = plan.id === "growth";
+                const hideGrowthHighlight = hoveredPlan !== null && hoveredPlan !== plan.id;
+                const isHighlighted = isGrowth ? !hideGrowthHighlight : hoveredPlan === plan.id;
                 return (
                   <div
                     key={plan.id}
-                    className={`bg-white rounded-xl p-8 flex flex-col justify-between relative transition-all duration-200 ${
-                      isGrowth
-                        ? "border-2 border-[#0667F9] shadow-md shadow-blue-100/50"
-                        : "border border-gray-200/80 shadow-sm"
+                    onMouseEnter={() => setHoveredPlan(plan.id)}
+                    onMouseLeave={() => setHoveredPlan(null)}
+                    className={`bg-white rounded-xl p-8 flex flex-col justify-between relative transition-all duration-300 ${
+                      isHighlighted
+                        ? "border-2 border-[#0667F9] shadow-xl shadow-blue-500/10 ring-4 ring-[#0667F9]/15 scale-[1.02] z-10"
+                        : "border border-gray-200/80 shadow-sm hover:border-[#0667F9]/30"
                     }`}
                   >
-                    {isGrowth && (
+                    {isGrowth && isHighlighted && (
                       <div className="absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 bg-[#0667F9] text-white text-[10px] font-black uppercase tracking-wider px-4 py-1 rounded-full">
                         MOST POPULAR
                       </div>
@@ -707,7 +713,7 @@ export default function CallPilotRecruitment() {
                     </div>
 
                     <div className="mt-8">
-                      <Link href={plan.checkoutUrl} className="w-full">
+                      <Link href="https://callpilot.pro/get-started" className="w-full">
                         <Button className="btn-white-section w-full">
                           {plan.isEnterprise ? "Contact Sales" : "Start Screening"}
                         </Button>
