@@ -299,19 +299,19 @@ export default function CallPilotRecruitment() {
                       <span className="text-[25px]">LIVE</span>
                     </div>
                     <img src="/brands/jobadder.png" alt="JobAdder" className="h-8 sm:h-8 w-auto object-contain" />
-                    <span className="text-[#0667F9] font-bold">•</span>
+                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500 shrink-0"></span>
                     <div className="flex items-center gap-1.5">
                       <img src="/brands/recruitcrm.jpeg" alt="Recruit CRM Icon" className="h-8 w-8 sm:h-8 sm:w-8 rounded object-cover" />
                       <span className="text-[25px]">Recruit CRM</span>
                     </div>
-                    <span className="text-[#0667F9] font-bold">•</span>
+                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500 shrink-0"></span>
+                    <img src="/brands/greenhouse.png" alt="Greenhouse" className="h-8 sm:h-8 w-auto object-contain" />
+                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-amber-500 shrink-0"></span>
                     <div className="flex items-center gap-1.5">
-                      <img src="/brands/greenhouse.png" alt="Greenhouse" className="h-8 sm:h-8 w- auto object-contain" />
-                      <span className="text-[12px] uppercase font-bold tracking-widest text-[#0667F9]/90 bg-[#0667F9]/10 px-1.5 py-0.5 rounded ml-0 border border-[#0667F9] shrink-0">In Progress</span>
+                      <img src="/brands/wordmark.svg" alt="Ashby" className="h-8 sm:h-8 w-auto object-contain" />
+                      <span className="text-[12px] uppercase font-bold tracking-widest text-amber-500 bg-amber-500/10 px-1.5 py-0.5 rounded ml-0 border border-amber-500 shrink-0">In Progress</span>
                     </div>
-                    <span className="text-[#0667F9] font-bold">•</span>
-                    <img src="/brands/wordmark.svg" alt="Ashby" className="h-8 sm:h-8 w-auto object-contain " />
-                    <span className="text-[#0667F9] font-bold">•</span>
+                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#0667F9] shrink-0"></span>
                     <div className="flex items-center gap-1.5">
                       <span className="text-white text-[25px] shrink-0">
                       iCIMS
@@ -330,19 +330,19 @@ export default function CallPilotRecruitment() {
                       <span className="text-[25px]">LIVE</span>
                     </div>
                     <img src="/brands/jobadder.png" alt="JobAdder" className="h-8 sm:h-8 w-auto object-contain" />
-                    <span className="text-[#0667F9] font-bold">•</span>
+                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500 shrink-0"></span>
                     <div className="flex items-center gap-1.5">
                       <img src="/brands/recruitcrm.jpeg" alt="Recruit CRM Icon" className="h-8 w-8 sm:h-8 sm:w-8 rounded object-cover" />
                       <span className="text-[25px]">Recruit CRM</span>
                     </div>
-                    <span className="text-[#0667F9] font-bold">•</span>
+                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500 shrink-0"></span>
+                    <img src="/brands/greenhouse.png" alt="Greenhouse" className="h-8 w-8 sm:h-8 sm:w-8 rounded object-cover" />
+                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-amber-500 shrink-0"></span>
                     <div className="flex items-center gap-1.5">
-                      <img src="/brands/greenhouse.png" alt="Greenhouse" className="h-8 w-8 sm:h-8 sm:w-8 rounded object-cover" />
-                      <span className="text-[12px] uppercase font-bold tracking-widest text-[#0667F9]/90 bg-[#0667F9]/10 px-1.5 py-0.5 rounded ml-0 border border-[#0667F9] shrink-0">In Progress</span>
+                      <img src="/brands/wordmark.svg" alt="Ashby" className="h-8 w-8 sm:h-8 sm:w-8 rounded object-cover" />
+                      <span className="text-[12px] uppercase font-bold tracking-widest text-amber-500 bg-amber-500/10 px-1.5 py-0.5 rounded ml-0 border border-amber-500 shrink-0">In Progress</span>
                     </div>
-                    <span className="text-[#0667F9] font-bold">•</span>
-                    <img src="/brands/wordmark.svg" alt="Ashby" className="h-8 w-8 sm:h-8 sm:w-8 rounded object-cover" />
-                    <span className="text-[#0667F9] font-bold">•</span>
+                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#0667F9] shrink-0"></span>
                     <span className="text-white text-[25px] shrink-0">
                     </span>
                       iCIMS <span className="text-[12px] uppercase font-medium tracking-widest text-white border border-white px-1.5 py-0.5 rounded ml-0 bg-white/10">Coming Soon</span>
