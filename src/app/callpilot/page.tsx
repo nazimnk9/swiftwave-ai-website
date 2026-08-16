@@ -224,7 +224,7 @@ export default function CallPilotRecruitment() {
         .ticker-track {
           display: flex;
           align-items: center;
-          gap: 5px;
+          gap: 1.5rem;
         }
       `}} />
 
@@ -296,45 +296,56 @@ export default function CallPilotRecruitment() {
                         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                         <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
                       </span>
-                      LIVE
+                      <span className="text-[25px]">LIVE</span>
                     </div>
-                    <span>JobAdder</span>
+                    <img src="/brands/jobadder.png" alt="JobAdder" className="h-8 sm:h-8 w-auto object-contain" />
                     <span className="text-[#0667F9] font-bold">•</span>
-                    <span>Recruit CRM</span>
+                    <div className="flex items-center gap-1.5">
+                      <img src="/brands/recruitcrm.jpeg" alt="Recruit CRM Icon" className="h-8 w-8 sm:h-8 sm:w-8 rounded object-cover" />
+                      <span className="text-[25px]">Recruit CRM</span>
+                    </div>
                     <span className="text-[#0667F9] font-bold">•</span>
-                    <span className="text-white font-bold">
-                      Greenhouse <span className="text-[9px] uppercase font-bold tracking-widest text-[#0667F9]/90 bg-[#0667F9]/10 px-1.5 py-0.5 rounded ml-0 border border-[#0667F9]">In Progress</span>
-                    </span>
+                    <div className="flex items-center gap-1.5">
+                      <img src="/brands/greenhouse.png" alt="Greenhouse" className="h-8 sm:h-8 w- auto object-contain" />
+                      <span className="text-[12px] uppercase font-bold tracking-widest text-[#0667F9]/90 bg-[#0667F9]/10 px-1.5 py-0.5 rounded ml-0 border border-[#0667F9] shrink-0">In Progress</span>
+                    </div>
                     <span className="text-[#0667F9] font-bold">•</span>
-                    <span>Ashby</span>
+                    <img src="/brands/wordmark.svg" alt="Ashby" className="h-8 sm:h-8 w-auto object-contain " />
                     <span className="text-[#0667F9] font-bold">•</span>
-                    <span className="text-white mt-1">
-                      iCIMS <span className="text-[9px] uppercase font-medium tracking-widest text-white border border-white px-1.5 py-0.5 rounded ml-0 bg-white/10">Coming Soon</span>
-                    </span>
+                    <div className="flex items-center gap-1.5">
+                      <span className="text-white text-[25px] shrink-0">
+                      iCIMS
+                       </span>
+                       <span className="text-[12px] uppercase font-medium tracking-widest text-white border border-white px-1.5 py-0.5 rounded ml-0 bg-white/10 mt-2">Coming Soon</span>
+                    </div>
                   </div>
 
                   {/* Second Track (Duplicate for seamless animation loop) */}
                   <div className="ticker-track" aria-hidden="true">
-                    <div className="inline-flex items-center gap-1 font-bold text-xs uppercase tracking-widest text-[#0667F9] shrink-0 mr-1">
+                    <div className="inline-flex items-center gap-1 font-bold text-xs uppercase tracking-widest text-[#0667F9] shrink-0 mr-1 text-[12px]">
                       <span className="relative flex h-2.5 w-2.5">
                         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                         <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
                       </span>
-                      LIVE
+                      <span className="text-[25px]">LIVE</span>
                     </div>
-                    <span>JobAdder</span>
+                    <img src="/brands/jobadder.png" alt="JobAdder" className="h-8 sm:h-8 w-auto object-contain" />
                     <span className="text-[#0667F9] font-bold">•</span>
-                    <span>Recruit CRM</span>
+                    <div className="flex items-center gap-1.5">
+                      <img src="/brands/recruitcrm.jpeg" alt="Recruit CRM Icon" className="h-8 w-8 sm:h-8 sm:w-8 rounded object-cover" />
+                      <span className="text-[25px]">Recruit CRM</span>
+                    </div>
                     <span className="text-[#0667F9] font-bold">•</span>
-                    <span className="text-white font-bold">
-                      Greenhouse <span className="text-[9px] uppercase font-bold tracking-widest text-[#0667F9]/90 bg-[#0667F9]/10 px-1.5 py-0.5 rounded ml-0 border border-[#0667F9]">In Progress</span>
+                    <div className="flex items-center gap-1.5">
+                      <img src="/brands/greenhouse.png" alt="Greenhouse" className="h-8 w-8 sm:h-8 sm:w-8 rounded object-cover" />
+                      <span className="text-[12px] uppercase font-bold tracking-widest text-[#0667F9]/90 bg-[#0667F9]/10 px-1.5 py-0.5 rounded ml-0 border border-[#0667F9] shrink-0">In Progress</span>
+                    </div>
+                    <span className="text-[#0667F9] font-bold">•</span>
+                    <img src="/brands/wordmark.svg" alt="Ashby" className="h-8 w-8 sm:h-8 sm:w-8 rounded object-cover" />
+                    <span className="text-[#0667F9] font-bold">•</span>
+                    <span className="text-white text-[25px] shrink-0">
                     </span>
-                    <span className="text-[#0667F9] font-bold">•</span>
-                    <span>Ashby</span>
-                    <span className="text-[#0667F9] font-bold">•</span>
-                    <span className="text-white mt-1">
-                      iCIMS <span className="text-[9px] uppercase font-medium tracking-widest text-white border border-white px-1.5 py-0.5 rounded ml-0 bg-white/10">Coming Soon</span>
-                    </span>
+                      iCIMS <span className="text-[12px] uppercase font-medium tracking-widest text-white border border-white px-1.5 py-0.5 rounded ml-0 bg-white/10">Coming Soon</span>
                   </div>
                 </div>
               </div>
