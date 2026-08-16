@@ -291,7 +291,7 @@ export default function CallPilotRecruitment() {
                 <div className="ticker-wrapper text-white/90 text-xs sm:text-sm md:text-base font-semibold">
                   {/* First Track */}
                   <div className="ticker-track">
-                    <div className="inline-flex items-center gap-1 font-bold text-xs uppercase tracking-widest text-[#0667F9] shrink-0 mr-0">
+                    <div className="inline-flex items-center gap-1 font-bold text-xs uppercase tracking-widest text-emerald-500 shrink-0 mr-0">
                       <span className="relative flex h-2.5 w-2.5">
                         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                         <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
@@ -316,13 +316,13 @@ export default function CallPilotRecruitment() {
                       <span className="text-white text-[25px] shrink-0">
                       iCIMS
                        </span>
-                       <span className="text-[12px] uppercase font-medium tracking-widest text-white border border-white px-1.5 py-0.5 rounded ml-0 bg-white/10 mt-2">Coming Soon</span>
+                       <span className="text-[12px] uppercase font-medium tracking-widest text-[#0667F9] border border-[#0667F9] px-1.5 py-0.5 rounded ml-0 bg-[#0667F9]/10 mt-2">Coming Soon</span>
                     </div>
                   </div>
 
                   {/* Second Track (Duplicate for seamless animation loop) */}
                   <div className="ticker-track" aria-hidden="true">
-                    <div className="inline-flex items-center gap-1 font-bold text-xs uppercase tracking-widest text-[#0667F9] shrink-0 mr-1 text-[12px]">
+                    <div className="inline-flex items-center gap-1 font-bold text-xs uppercase tracking-widest text-emerald-500 shrink-0 mr-1 text-[12px]">
                       <span className="relative flex h-2.5 w-2.5">
                         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                         <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
@@ -345,7 +345,7 @@ export default function CallPilotRecruitment() {
                     <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#0667F9] shrink-0"></span>
                     <span className="text-white text-[25px] shrink-0">
                     </span>
-                      iCIMS <span className="text-[12px] uppercase font-medium tracking-widest text-white border border-white px-1.5 py-0.5 rounded ml-0 bg-white/10">Coming Soon</span>
+                      iCIMS <span className="text-[12px] uppercase font-medium tracking-widest text-[#0667F9] border border-[#0667F9] px-1.5 py-0.5 rounded ml-0 bg-[#0667F9]/10">Coming Soon</span>
                   </div>
                 </div>
               </div>
