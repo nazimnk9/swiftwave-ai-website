@@ -1,0 +1,187 @@
+/* ==========================================================================
+   CallPilot — Screening Call Live + Daily Digest
+   Self-contained. No dependencies. Override the variables to retheme.
+   Colour means one thing only:
+     red    unsuccessful
+     amber  documents requested
+     green  documents received
+   ========================================================================== */
+
+.cpp {
+  --cpp-bg-top:    #08121C;
+  --cpp-bg-bottom: #04090F;
+  --cpp-edge:      #1E5C99;
+  --cpp-signal:    #4DA8FF;   /* replace with your exact CallPilot blue */
+  --cpp-rule:      rgba(77,168,255,.16);
+  --cpp-label:     #4F739A;
+  --cpp-meta:      #5F87AB;
+  --cpp-text:      #C3D4E3;
+  --cpp-name:      #EAF2FA;
+  --cpp-idle:      #3E5670;
+  --cpp-idle-box:  #2E4863;
+  --cpp-green:     #5AA872;
+  --cpp-green-tx:  #8FD3A4;
+  --cpp-amber:     #C9903A;
+  --cpp-amber-tx:  #E5BC78;
+  --cpp-red:       #B4544A;
+  --cpp-red-tx:    #DD9C95;
+
+  --cpp-mono:  "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --cpp-serif: "Bodoni Moda", Didot, Georgia, serif;
+
+  position: relative;
+  background: linear-gradient(180deg, var(--cpp-bg-top), var(--cpp-bg-bottom));
+  border: 1px solid var(--cpp-edge);
+  box-shadow:
+    0 0 0 1px rgba(77,168,255,.12),
+    0 0 80px -22px rgba(77,168,255,.5),
+    0 30px 60px -30px #000;
+}
+
+/* --- header --------------------------------------------------------- */
+.cpp__head {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 12px; padding: 14px 18px; border-bottom: 1px solid rgba(77,168,255,.18);
+}
+.cpp__live {
+  display: flex; align-items: center; gap: 8px;
+  font-family: var(--cpp-mono); font-size: 10px; letter-spacing: .2em;
+  text-transform: uppercase; color: var(--cpp-signal);
+}
+.cpp__dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--cpp-signal); box-shadow: 0 0 10px var(--cpp-signal);
+  animation: cpp-pulse 1.6s infinite;
+}
+@keyframes cpp-pulse { 0%,100% { opacity: 1 } 50% { opacity: .2 } }
+.cpp__timer {
+  font-family: var(--cpp-mono); font-size: 10.5px; letter-spacing: .1em;
+  color: #638CB0; font-variant-numeric: tabular-nums;
+}
+
+/* --- who is on the call --------------------------------------------- */
+.cpp__who { padding: 14px 18px 12px; border-bottom: 1px solid rgba(77,168,255,.12) }
+.cpp__name { font-family: var(--cpp-serif); font-size: 22px; line-height: 1.2; color: var(--cpp-name) }
+.cpp__role {
+  font-family: var(--cpp-mono); font-size: 10.5px; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--cpp-meta); margin-top: 5px;
+}
+
+/* --- waveform -------------------------------------------------------- */
+.cpp__wave { display: flex; align-items: flex-end; gap: 3px; height: 34px; padding: 12px 18px 0 }
+.cpp__wave i {
+  flex: 1; min-height: 2px; opacity: .8;
+  background: linear-gradient(180deg, var(--cpp-signal), rgba(77,168,255,.2));
+  animation: cpp-bar 1.1s ease-in-out infinite;
+}
+@keyframes cpp-bar { 0%,100% { height: 12% } 50% { height: 100% } }
+
+/* --- question and answer --------------------------------------------- */
+.cpp__qa { padding: 14px 18px 4px; min-height: 118px }
+.cpp__q { font-family: var(--cpp-mono); font-size: 12.5px; line-height: 1.55; color: var(--cpp-text) }
+.cpp__a { font-family: var(--cpp-mono); font-size: 12.5px; margin-top: 12px; min-height: 22px }
+.cpp__q b, .cpp__a b {
+  display: block; margin-bottom: 6px; font-weight: 500; font-size: 9.5px;
+  letter-spacing: .2em; text-transform: uppercase; color: var(--cpp-signal);
+}
+.cpp__a b { color: var(--cpp-meta) }
+.cpp__ans { font-size: 18px; font-weight: 500; letter-spacing: .08em }
+.cpp__ans--yes { color: var(--cpp-green) }
+.cpp__ans--no  { color: var(--cpp-red) }
+.cpp__fade { opacity: 0; transition: opacity .3s }
+.cpp__fade.is-on { opacity: 1 }
+
+/* --- requirement checklist ------------------------------------------- */
+.cpp__crit { padding: 12px 18px 14px; border-top: 1px solid var(--cpp-rule) }
+.cpp__crit-h {
+  font-family: var(--cpp-mono); font-size: 9.5px; letter-spacing: .2em;
+  text-transform: uppercase; color: var(--cpp-label); margin-bottom: 9px;
+}
+.cpp__req {
+  display: flex; align-items: center; gap: 9px; padding: 3px 0;
+  font-family: var(--cpp-mono); font-size: 11.5px; color: var(--cpp-idle); transition: color .3s;
+}
+.cpp__box {
+  width: 12px; height: 12px; flex: none; display: grid; place-items: center;
+  border: 1px solid var(--cpp-idle-box); color: transparent;
+  font-size: 9px; line-height: 1; transition: .3s;
+}
+.cpp__req.is-pass { color: #8FB4CE }
+.cpp__req.is-pass .cpp__box { border-color: var(--cpp-green); color: var(--cpp-green); background: rgba(90,168,114,.14) }
+.cpp__req.is-fail { color: var(--cpp-red-tx) }
+.cpp__req.is-fail .cpp__box { border-color: var(--cpp-red); color: var(--cpp-red); background: rgba(180,84,74,.14) }
+
+/* --- verdict --------------------------------------------------------- */
+.cpp__foot {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 13px 18px; border-top: 1px solid rgba(77,168,255,.18);
+  font-family: var(--cpp-mono); font-size: 10px; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--cpp-label);
+}
+.cpp__verdict { display: inline-flex; align-items: center; gap: 8px; font-weight: 500; opacity: 0; transition: opacity .4s }
+.cpp__verdict.is-on { opacity: 1 }
+.cpp__verdict i { width: 9px; height: 9px; border-radius: 50% }
+.cpp__verdict--amber { color: var(--cpp-amber) }
+.cpp__verdict--amber i { background: var(--cpp-amber); box-shadow: 0 0 10px var(--cpp-amber) }
+.cpp__verdict--green { color: var(--cpp-green) }
+.cpp__verdict--green i { background: var(--cpp-green); box-shadow: 0 0 10px var(--cpp-green) }
+.cpp__verdict--red { color: var(--cpp-red) }
+.cpp__verdict--red i { background: var(--cpp-red); box-shadow: 0 0 10px var(--cpp-red) }
+
+/* --- daily digest ----------------------------------------------------- */
+.cpp__digest { border-top: 1px solid rgba(77,168,255,.18) }
+.cpp__digest-h {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 18px;
+  padding: 13px 18px 10px;
+  font-family: var(--cpp-mono); font-size: 9.5px; letter-spacing: .2em;
+  text-transform: uppercase; color: var(--cpp-label);
+}
+.cpp__masthead {
+  font-family: var(--cpp-serif); font-size: 19px; letter-spacing: .04em;
+  text-transform: none; color: var(--cpp-name);
+}
+.cpp__screened { white-space: nowrap; color: var(--cpp-meta) }
+.cpp__screened b { font-weight: 500; font-variant-numeric: tabular-nums }
+
+.cpp__tally {
+  display: flex; flex-wrap: wrap; gap: 6px 16px; padding: 0 18px 12px;
+  border-bottom: 1px solid rgba(77,168,255,.12);
+  font-family: var(--cpp-mono); font-size: 10px; letter-spacing: .09em;
+  text-transform: uppercase; color: var(--cpp-label);
+}
+.cpp__tally span { display: flex; align-items: center; gap: 6px }
+.cpp__tally i { width: 6px; height: 6px; border-radius: 50%; flex: none }
+.cpp__tally b { font-weight: 500; font-variant-numeric: tabular-nums }
+.cpp__tally .is-g i { background: var(--cpp-green) } .cpp__tally .is-g b { color: var(--cpp-green-tx) }
+.cpp__tally .is-a i { background: var(--cpp-amber) } .cpp__tally .is-a b { color: var(--cpp-amber-tx) }
+.cpp__tally .is-r i { background: var(--cpp-red) }   .cpp__tally .is-r b { color: var(--cpp-red-tx) }
+
+.cpp__list { list-style: none; margin: 0; padding: 10px 18px 14px; overflow: hidden }
+.cpp__row {
+  display: grid; grid-template-columns: 42px 14px 1fr; align-items: baseline;
+  gap: 10px; padding: 7px 0;
+  font-family: var(--cpp-mono); font-size: 11px; line-height: 1.45; color: var(--cpp-text);
+  border-top: 1px solid rgba(77,168,255,.07);
+  animation: cpp-enter .35s ease-out;
+}
+.cpp__row:first-child { border-top: none }
+@keyframes cpp-enter { from { opacity: 0; transform: translateY(-5px) } to { opacity: 1; transform: none } }
+.cpp__row-time { color: var(--cpp-label); font-variant-numeric: tabular-nums }
+.cpp__row-name { color: var(--cpp-name) }
+.cpp__row-role { color: var(--cpp-label) }
+.cpp__light { display: flex; align-items: center; justify-content: center; height: 16px }
+.cpp__light i { width: 7px; height: 7px; border-radius: 50%; display: block }
+.cpp__row--green .cpp__light i { background: var(--cpp-green); box-shadow: 0 0 7px rgba(90,168,114,.8) }
+.cpp__row--amber .cpp__light i { background: var(--cpp-amber); box-shadow: 0 0 7px rgba(201,144,58,.8) }
+.cpp__row--red   .cpp__light i { background: var(--cpp-red);   box-shadow: 0 0 7px rgba(180,84,74,.8) }
+.cpp__row--green .cpp__row-what { color: var(--cpp-green-tx) }
+.cpp__row--amber .cpp__row-what { color: var(--cpp-amber-tx) }
+.cpp__row--red   .cpp__row-what { color: var(--cpp-red-tx) }
+
+/* --- accessibility ---------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  .cpp *, .cpp *::before, .cpp *::after { animation: none !important; transition: none !important }
+  .cpp__fade { opacity: 1 }
+  .cpp__verdict { opacity: 1 }
+  .cpp__wave i { height: 45% }
+}
