@@ -112,7 +112,7 @@ function ScreeningCallLive() {
     };
   }, []);
 
-  return <div ref={box} className="w-full max-w-[440px] h-[718px] lg:h-[842px] overflow-hidden mx-auto lg:mx-0" />;
+  return <div ref={box} className="w-full max-w-[440px] min-h-[780px] lg:min-h-[968px] h-auto mx-auto lg:mx-0" />;
 }
 
 export default function CallPilotRecruitment() {
