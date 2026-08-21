@@ -91,7 +91,7 @@ function ScreeningCallLive() {
     let panel: { destroy: () => void } | undefined;
 
     const js = document.createElement('script');
-    js.src = '/callpilot-panel.js';
+    js.src = '/callpilot.js';
     js.onload = () => {
       const customWindow = window as unknown as {
         CallPilotPanel?: (container: HTMLDivElement | null, options: { rows: number }) => { destroy: () => void };
