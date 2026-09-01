@@ -4,6 +4,7 @@
 import { useState, useEffect, useRef } from "react";
 import Header from "@/components/callpilot/Header";
 import Footer from "@/components/callpilot/Footer";
+import FeaturedProductSection from "@/components/home/featured-product";
 import "./callpilot-panel.css";
 import { Manrope, Inter } from "next/font/google";
 
@@ -237,6 +238,15 @@ export default function CallPilotRecruitment() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
               {/* Left Column: Hero Header Content */}
               <div className="lg:col-span-7 flex flex-col items-start text-left">
+                {/* Flagship Product Badge */}
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 text-white text-xs font-bold tracking-wider uppercase mb-6">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
+                  </span>
+                  FLAGSHIP PRODUCT &middot; LIVE NOW
+                </div>
+
                 {/* Top Subtext Badge - Split in two lines with blue dots */}
                 <div className="flex flex-col gap-1 mb-8 items-start">
                   <div className="text-[10px] sm:text-xs md:text-sm font-black tracking-[0.22em] text-white uppercase text-left">
@@ -645,6 +655,11 @@ export default function CallPilotRecruitment() {
             </div>
           </div>
         </section>
+
+        {/* FEATURED PRODUCT HIGHLIGHT */}
+        <div className="bg-white py-6">
+          <FeaturedProductSection />
+        </div>
 
         {/* SECTION 8: PRICING */}
         <section className="bg-white py-20 border-b border-gray-100">

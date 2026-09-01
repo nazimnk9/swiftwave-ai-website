@@ -9,6 +9,7 @@ export default function Home() {
   return (
     <>
       <HeroSection />
+      {/* <FeaturedProductSection /> */}
       <ModulesSection/>
       <AIModulesSection/>
       <BrandShow/>
@@ -17,3 +18,4 @@ export default function Home() {
     </>
   );
 }
+

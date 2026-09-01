@@ -94,9 +94,22 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-gray-400">
-            © {currentYear} CallPilot. Operated by Swiftwave FZ-LLC. All rights reserved.
+            &copy; {currentYear} CallPilot. Operated by{" "}
+            <a
+              href="https://www.swiftwave.ai/callpilot"
+              className="text-gray-500 hover:text-gray-900 underline underline-offset-2 transition-colors"
+            >
+              Swiftwave FZ-LLC
+            </a>{" "}
+            &middot;{" "}
+            <a
+              href="mailto:contact@swiftwave.ai"
+              className="text-gray-500 hover:text-gray-900 underline underline-offset-2 transition-colors"
+            >
+              contact@swiftwave.ai
+            </a>
+            . All rights reserved.
           </p>
-          
         </div>
       </div>
     </footer>
