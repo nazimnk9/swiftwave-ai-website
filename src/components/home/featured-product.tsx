@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function FeaturedProductSection() {
   return (
     <div className="max-w-[1100px] mx-auto px-6 sm:px-8 py-8 w-full">
