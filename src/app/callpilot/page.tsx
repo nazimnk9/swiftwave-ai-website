@@ -424,7 +424,7 @@ export default function CallPilotRecruitment() {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 items-center text-center md:text-center divide-y sm:divide-y-0 md:divide-x divide-gray-100">
               {/* Metric 1 */}
               <div className="pt-6 sm:pt-0 first:pt-0">
-                <div className="text-3xl lg:text-4xl font-extrabold text-[#0667F9] tracking-tight">~60 SECONDS</div>
+                <div className="text-3xl lg:text-4xl font-extrabold text-[#0667F9] tracking-tight">~2 Minutes</div>
                 {/* <div className="text-xs uppercase tracking-widest text-[#0667F9] font-bold mt-1">SECONDS</div> */}
                 <div className="text-sm text-[#36454F] font-medium mt-1">Average screening call</div>
               </div>
